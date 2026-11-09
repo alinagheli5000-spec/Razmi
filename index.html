@@ -8,9 +8,104 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
 :root{--navy:#101d39;--navy2:#17294d;--blue:#3478f6;--cyan:#19b6c9;--purple:#7b61ff;--bg:#f3f6fc;--card:#fff;--text:#1c2940;--muted:#7b879b;--line:#e7ecf4;--green:#16a477;--red:#e45c68;--orange:#ed9b36;--shadow:0 10px 30px rgba(25,45,85,.07)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Vazirmatn',Tahoma,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}.sidebar{width:260px;background:linear-gradient(175deg,#101d39,#192d53 75%,#213d69);color:#fff;padding:20px 15px;position:fixed;right:0;top:0;bottom:0;overflow:auto;z-index:5}.brand{padding:12px 10px 22px;text-align:center;border-bottom:1px solid #ffffff20;margin-bottom:18px}.brandmark{font-size:39px;font-weight:900;letter-spacing:2px;color:#fff;text-shadow:2px 2px 0 #3676d8,4px 4px 0 #214d99,7px 8px 14px #0009;transform:perspective(150px) rotateX(5deg)}.brand small{display:block;color:#b9c9e7;font-size:11px;margin-top:8px}.school-switch{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:12px 0 20px}.school-switch button{background:#ffffff12;color:#d9e5fa;padding:10px 5px;border:1px solid #ffffff20;border-radius:11px;font-size:11px}.school-switch button.active{background:#3478f6;color:white;border-color:#72a0ff;box-shadow:0 5px 15px #07132c55}.navlabel{font-size:10px;color:#8fa4c8;margin:18px 10px 8px}.nav button{width:100%;text-align:right;background:transparent;color:#c7d3e8;padding:11px 12px;border-radius:10px;margin:2px 0;font-size:12px;display:flex;align-items:center;gap:11px}.nav button:hover,.nav button.active{background:#ffffff18;color:#fff}.nav .ico{width:21px;text-align:center;font-size:16px}.side-foot{font-size:10px;color:#8fa4c8;text-align:center;margin:25px 0 5px}.main{margin-right:260px;width:calc(100% - 260px);min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:4}.top-title{font-weight:800;font-size:16px}.top-sub{font-size:10px;color:var(--muted);margin-top:3px}.top-actions{display:flex;align-items:center;gap:10px}.pill{background:#eef4ff;color:#2864ce;padding:8px 12px;border-radius:20px;font-size:11px}.avatar{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#3478f6,#19b6c9);color:white;display:grid;place-items:center;font-weight:800}.content{padding:25px 28px 45px;max-width:1600px;margin:auto}.page-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:12px}.page-head h1{font-size:20px;margin:0}.page-head p{font-size:11px;color:var(--muted);margin:5px 0 0}.btn{padding:10px 15px;border-radius:10px;background:var(--blue);color:white;font-size:11px;font-weight:700;box-shadow:0 5px 12px #3478f626}.btn.secondary{background:#edf2fb;color:#344563;box-shadow:none}.btn.green{background:var(--green)}.btn.red{background:var(--red)}.btn.small{padding:7px 10px;font-size:10px}.grid{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.stat{padding:17px;position:relative;overflow:hidden}.stat:after{content:'سروش';position:absolute;left:8px;bottom:-12px;font-size:29px;font-weight:900;color:#f4f7fc;transform:rotate(-12deg);z-index:0}.stat-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}.stat-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#edf4ff;font-size:18px}.stat-label{font-size:11px;color:var(--muted)}.stat-value{font-size:23px;font-weight:800;margin-top:12px;position:relative;z-index:1}.stat-note{font-size:10px;color:var(--muted);margin-top:3px}.two{grid-template-columns:1.35fr 1fr}.panel{padding:18px;margin-bottom:16px}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:10px}.panel-head h3{font-size:13px;margin:0}.muted{color:var(--muted);font-size:10px}.quick-grid{grid-template-columns:repeat(4,1fr)}.quick{border:1px solid var(--line);border-radius:13px;padding:14px;background:#fff;text-align:center;color:var(--text)}.quick b{display:block;font-size:11px;margin-top:7px}.quick span{font-size:22px}.quick:hover{border-color:#9bbcff;background:#f8faff}.watermark{font-size:22px;font-weight:900;color:#dce7fb;text-shadow:1px 1px 0 #b9c9e7,2px 3px 0 #a9bde2;letter-spacing:1px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th,td{padding:12px 10px;text-align:right;border-bottom:1px solid var(--line);font-size:11px}th{color:#71809a;font-weight:700;background:#fafbfe}td{color:#34435b}.tag{padding:4px 8px;border-radius:20px;font-size:9px;background:#edf4ff;color:#3671d7}.tag.green{background:#e7f7f0;color:#13845f}.tag.red{background:#fff0f0;color:#d54c5b}.tag.orange{background:#fff5e8;color:#c27b20}.empty{text-align:center;color:var(--muted);padding:30px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field label{font-size:10px;color:#66758e}.field input,.field select,.field textarea{border:1px solid #dfe6f0;border-radius:9px;padding:10px;background:#fff;color:var(--text);outline:none;font-size:11px;width:100%}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6e9bf5;box-shadow:0 0 0 3px #3478f618}.search{min-width:210px;flex:1}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.form-grid .wide{grid-column:1/-1}.modal{position:fixed;inset:0;background:#07132999;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.modal-box{background:white;border-radius:18px;padding:22px;width:min(600px,100%);max-height:90vh;overflow:auto;box-shadow:0 20px 70px #06132d55}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.modal-head h3{margin:0;font-size:15px}.close{background:#f1f4f9;border-radius:9px;padding:6px 10px}.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:17px}.tabs{display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px}.tabs button{background:#f0f3f9;color:#61708a;border-radius:9px;padding:9px 12px;font-size:10px}.tabs button.active{background:#e7efff;color:#2867d9;font-weight:800}.accounting-banner{background:linear-gradient(115deg,#102143,#244b82);color:white;border-radius:17px;padding:19px 22px;margin-bottom:17px;display:flex;align-items:center;justify-content:space-between;gap:15px;overflow:hidden;position:relative}.accounting-banner:after{content:'سروش';position:absolute;left:20px;top:-20px;font-size:80px;font-weight:900;color:#ffffff0b;text-shadow:4px 5px #ffffff08}.accounting-banner h2{font-size:17px;margin:0 0 5px}.accounting-banner p{font-size:10px;color:#c7d8f5;margin:0}.money{font-size:21px;font-weight:900}.positive{color:var(--green)}.negative{color:var(--red)}.mini-cards{grid-template-columns:repeat(3,1fr)}.mini-card{background:#f8faff;border:1px solid var(--line);padding:13px;border-radius:12px}.mini-card small{font-size:10px;color:var(--muted)}.mini-card strong{display:block;font-size:17px;margin-top:6px}.barline{height:9px;background:#edf1f8;border-radius:10px;overflow:hidden;margin-top:10px}.barline i{display:block;height:100%;background:linear-gradient(90deg,#3478f6,#20bac7);border-radius:10px}.footer{text-align:center;color:#9aa6b9;font-size:10px;padding:18px}.mobile-menu{display:none;background:#eff4ff;color:#234b89;border-radius:9px;padding:8px 10px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Vazirmatn',Tahoma,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}
+.sidebar{width:260px;background:linear-gradient(175deg,#101d39,#192d53 75%,#213d69);color:#fff;padding:20px 15px;position:fixed;right:0;top:0;bottom:0;overflow:auto;z-index:5}
+.brand{padding:12px 10px 22px;text-align:center;border-bottom:1px solid #ffffff20;margin-bottom:18px}
+.brandmark{font-size:39px;font-weight:900;letter-spacing:2px;color:#fff;text-shadow:2px 2px 0 #3676d8,4px 4px 0 #214d99,7px 8px 14px #0009;transform:perspective(150px) rotateX(5deg)}
+.brand small{display:block;color:#b9c9e7;font-size:11px;margin-top:8px}
+.school-switch{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:12px 0 20px}
+.school-switch button{background:#ffffff12;color:#d9e5fa;padding:10px 5px;border:1px solid #ffffff20;border-radius:11px;font-size:11px}
+.school-switch button.active{background:#3478f6;color:white;border-color:#72a0ff;box-shadow:0 5px 15px #07132c55}
+.navlabel{font-size:10px;color:#8fa4c8;margin:18px 10px 8px}
+.nav button{width:100%;text-align:right;background:transparent;color:#c7d3e8;padding:11px 12px;border-radius:10px;margin:2px 0;font-size:12px;display:flex;align-items:center;gap:11px}
+.nav button:hover,.nav button.active{background:#ffffff18;color:#fff}
+.nav .ico{width:21px;text-align:center;font-size:16px}
+.side-foot{font-size:10px;color:#8fa4c8;text-align:center;margin:25px 0 5px}
+.main{margin-right:260px;width:calc(100% - 260px);min-width:0}
+.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:4}
+.top-title{font-weight:800;font-size:16px}.top-sub{font-size:10px;color:var(--muted);margin-top:3px}
+.top-actions{display:flex;align-items:center;gap:10px}
+.pill{background:#eef4ff;color:#2864ce;padding:8px 12px;border-radius:20px;font-size:11px}
+.avatar{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#3478f6,#19b6c9);color:white;display:grid;place-items:center;font-weight:800}
+.content{padding:25px 28px 45px;max-width:1600px;margin:auto}
+.page-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:12px}
+.page-head h1{font-size:20px;margin:0}.page-head p{font-size:11px;color:var(--muted);margin:5px 0 0}
+.btn{padding:10px 15px;border-radius:10px;background:var(--blue);color:white;font-size:11px;font-weight:700;box-shadow:0 5px 12px #3478f626}
+.btn.secondary{background:#edf2fb;color:#344563;box-shadow:none}
+.btn.green{background:var(--green)}.btn.red{background:var(--red)}.btn.orange{background:var(--orange)}
+.btn.small{padding:7px 10px;font-size:10px}
+.grid{display:grid;gap:15px}
+.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}
+.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.stat{padding:17px;position:relative;overflow:hidden}
+.stat:after{content:'سروش';position:absolute;left:8px;bottom:-12px;font-size:29px;font-weight:900;color:#f4f7fc;transform:rotate(-12deg);z-index:0}
+.stat-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.stat-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#edf4ff;font-size:18px}
+.stat-label{font-size:11px;color:var(--muted)}
+.stat-value{font-size:23px;font-weight:800;margin-top:12px;position:relative;z-index:1}
+.stat-note{font-size:10px;color:var(--muted);margin-top:3px}
+.two{grid-template-columns:1.35fr 1fr}
+.panel{padding:18px;margin-bottom:16px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:10px}
+.panel-head h3{font-size:13px;margin:0}.muted{color:var(--muted);font-size:10px}
+.quick-grid{grid-template-columns:repeat(4,1fr)}
+.quick{border:1px solid var(--line);border-radius:13px;padding:14px;background:#fff;text-align:center;color:var(--text)}
+.quick b{display:block;font-size:11px;margin-top:7px}.quick span{font-size:22px}
+.quick:hover{border-color:#9bbcff;background:#f8faff}
+.watermark{font-size:22px;font-weight:900;color:#dce7fb;text-shadow:1px 1px 0 #b9c9e7,2px 3px 0 #a9bde2;letter-spacing:1px}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap}
+th,td{padding:12px 10px;text-align:right;border-bottom:1px solid var(--line);font-size:11px}
+th{color:#71809a;font-weight:700;background:#fafbfe}td{color:#34435b}
+.tag{padding:4px 8px;border-radius:20px;font-size:9px;background:#edf4ff;color:#3671d7}
+.tag.green{background:#e7f7f0;color:#13845f}.tag.red{background:#fff0f0;color:#d54c5b}.tag.orange{background:#fff5e8;color:#c27b20}
+.empty{text-align:center;color:var(--muted);padding:30px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:10px;color:#66758e}
+.field input,.field select,.field textarea{border:1px solid #dfe6f0;border-radius:9px;padding:10px;background:#fff;color:var(--text);outline:none;font-size:11px;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#6e9bf5;box-shadow:0 0 0 3px #3478f618}
+.search{min-width:210px;flex:1}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.form-grid .wide{grid-column:1/-1}
+.modal{position:fixed;inset:0;background:#07132999;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}
+.modal.show{display:flex}
+.modal-box{background:white;border-radius:18px;padding:22px;width:min(640px,100%);max-height:90vh;overflow:auto;box-shadow:0 20px 70px #06132d55}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}
+.modal-head h3{margin:0;font-size:15px}
+.close{background:#f1f4f9;border-radius:9px;padding:6px 10px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:17px}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px}
+.tabs button{background:#f0f3f9;color:#61708a;border-radius:9px;padding:9px 12px;font-size:10px}
+.tabs button.active{background:#e7efff;color:#2867d9;font-weight:800}
+.accounting-banner{background:linear-gradient(115deg,#102143,#244b82);color:white;border-radius:17px;padding:19px 22px;margin-bottom:17px;display:flex;align-items:center;justify-content:space-between;gap:15px;overflow:hidden;position:relative}
+.accounting-banner:after{content:'سروش';position:absolute;left:20px;top:-20px;font-size:80px;font-weight:900;color:#ffffff0b;text-shadow:4px 5px #ffffff08}
+.accounting-banner h2{font-size:17px;margin:0 0 5px}.accounting-banner p{font-size:10px;color:#c7d8f5;margin:0}
+.money{font-size:21px;font-weight:900}.positive{color:var(--green)}.negative{color:var(--red)}
+.mini-cards{grid-template-columns:repeat(3,1fr)}
+.mini-card{background:#f8faff;border:1px solid var(--line);padding:13px;border-radius:12px}
+.mini-card small{font-size:10px;color:var(--muted)}.mini-card strong{display:block;font-size:17px;margin-top:6px}
+.barline{height:9px;background:#edf1f8;border-radius:10px;overflow:hidden;margin-top:10px}
+.barline i{display:block;height:100%;background:linear-gradient(90deg,#3478f6,#20bac7);border-radius:10px}
+.footer{text-align:center;color:#9aa6b9;font-size:10px;padding:18px}
+.mobile-menu{display:none;background:#eff4ff;color:#234b89;border-radius:9px;padding:8px 10px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#101d39;color:#fff;padding:12px 20px;border-radius:12px;font-size:12px;z-index:100;box-shadow:0 10px 30px #0004;opacity:0;transition:.3s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.err{background:#e45c68}.toast.ok{background:#16a477}
+.section-title{font-size:13px;margin:20px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);color:#2864ce;font-weight:800}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi small{font-size:10px;color:var(--muted);display:block}.kpi b{font-size:15px;display:block;margin-top:4px}
+.badge{padding:3px 8px;border-radius:20px;font-size:9px;font-weight:700}
+.badge.due{background:#fff0f0;color:#d54c5b}.badge.paid{background:#e7f7f0;color:#13845f}.badge.partial{background:#fff5e8;color:#c27b20}
+.installment-row{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:#f8faff;border-radius:9px;margin:5px 0;font-size:11px;border:1px solid var(--line);gap:8px}
+.actions-cell{display:flex;gap:4px;flex-wrap:wrap}
+.ledger-table td,.ledger-table th{font-size:10px}
+.payslip{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.payslip-row{display:flex;justify-content:space-between;padding:5px 0;font-size:11px;border-bottom:1px dashed var(--line)}
+.payslip-row:last-child{border:0;font-weight:800;font-size:12px;padding-top:9px;margin-top:4px;border-top:1px solid var(--line)}
 @media(max-width:1000px){.stats{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.quick-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.sidebar{transform:translateX(100%);transition:.25s}.sidebar.open{transform:translateX(0)}.main{margin-right:0;width:100%}.topbar{padding:0 14px;height:65px}.content{padding:18px 13px}.top-title{font-size:13px}.pill{display:none}.page-head{align-items:flex-start;flex-direction:column}.stats{gap:9px}.stat{padding:12px}.stat-value{font-size:19px}.mobile-menu{display:block}.form-grid{grid-template-columns:1fr}.mini-cards{grid-template-columns:1fr}.accounting-banner{align-items:flex-start;flex-direction:column}.brandmark{font-size:34px}}
+@media(max-width:700px){.sidebar{transform:translateX(100%);transition:.25s}.sidebar.open{transform:translateX(0)}.main{margin-right:0;width:100%}.topbar{padding:0 14px;height:65px}.content{padding:18px 13px}.top-title{font-size:13px}.pill{display:none}.page-head{align-items:flex-start;flex-direction:column}.stats{gap:9px}.stat{padding:12px}.stat-value{font-size:19px}.mobile-menu{display:block}.form-grid{grid-template-columns:1fr}.mini-cards{grid-template-columns:1fr}.accounting-banner{align-items:flex-start;flex-direction:column}.brandmark{font-size:34px}.kpi-row{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -18,7 +113,10 @@
 <aside class="sidebar" id="sidebar">
  <div class="brand"><div class="brandmark">ســروش</div><small>نرم‌افزار جامع مدیریت مدارس</small></div>
  <div class="navlabel">انتخاب واحد آموزشی</div>
- <div class="school-switch"><button class="active" data-school="ابتدایی" onclick="setSchool('ابتدایی',this)">🏫 ابتدایی</button><button data-school="متوسطه اول" onclick="setSchool('متوسطه اول',this)">🎓 متوسطه اول</button></div>
+ <div class="school-switch">
+  <button class="active" data-school="ابتدایی" onclick="setSchool('ابتدایی',this)">🏫 ابتدایی</button>
+  <button data-school="متوسطه اول" onclick="setSchool('متوسطه اول',this)">🎓 متوسطه اول</button>
+ </div>
  <div class="navlabel">مدیریت و عملیات</div>
  <nav class="nav">
   <button class="active" data-page="dashboard" onclick="showPage('dashboard',this)"><span class="ico">▦</span>داشبورد</button>
@@ -29,17 +127,21 @@
   <button data-page="schedule" onclick="showPage('schedule',this)"><span class="ico">🗓️</span>برنامه کلاسی</button>
   <div class="navlabel">امور مالی و اداری</div>
   <button data-page="accounting" onclick="showPage('accounting',this)"><span class="ico">💳</span>حسابداری و امور مالی</button>
+  <button data-page="payroll" onclick="showPage('payroll',this)"><span class="ico">💵</span>حقوق و دستمزد</button>
   <button data-page="exams" onclick="showPage('exams',this)"><span class="ico">📝</span>امتحانات</button>
   <button data-page="notices" onclick="showPage('notices',this)"><span class="ico">📣</span>اطلاعیه‌ها</button>
   <button data-page="reports" onclick="showPage('reports',this)"><span class="ico">📈</span>گزارش‌های مدیریتی</button>
   <div class="navlabel">تنظیمات</div>
   <button data-page="settings" onclick="showPage('settings',this)"><span class="ico">⚙️</span>پشتیبان‌گیری و تنظیمات</button>
  </nav>
- <div class="side-foot">Soroush School Suite · نسخه ۱.۰</div>
+ <div class="side-foot">Soroush School Suite · نسخه ۱.۱</div>
 </aside>
 <main class="main">
 <header class="topbar">
- <div style="display:flex;align-items:center;gap:10px"><button class="mobile-menu" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button><div><div class="top-title" id="topTitle">داشبورد مدیریتی</div><div class="top-sub" id="topSub">نمای کلی عملکرد مدرسه</div></div></div>
+ <div style="display:flex;align-items:center;gap:10px">
+  <button class="mobile-menu" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+  <div><div class="top-title" id="topTitle">داشبورد مدیریتی</div><div class="top-sub" id="topSub">نمای کلی عملکرد مدرسه</div></div>
+ </div>
  <div class="top-actions"><span class="pill" id="schoolPill">واحد آموزشی: ابتدایی</span><span class="watermark">سروش</span><div class="avatar">م</div></div>
 </header>
 <div class="content" id="content"></div>
@@ -48,63 +150,603 @@
 </div>
 <div class="modal" id="modal"><div class="modal-box"><div class="modal-head"><h3 id="modalTitle">ثبت اطلاعات</h3><button class="close" onclick="closeModal()">✕</button></div><div id="modalBody"></div></div></div>
 <script>
+/* ========== داده‌های پایه ========== */
 const grades={'ابتدایی':['پیش‌دبستانی اول','پیش‌دبستانی دوم','پایه اول','پایه دوم','پایه سوم','پایه چهارم','پایه پنجم','پایه ششم'],'متوسطه اول':['پایه هفتم','پایه هشتم','پایه نهم']};
-const titles={dashboard:'داشبورد مدیریتی',students:'مدیریت دانش‌آموزان',staff:'دبیران و کارکنان',attendance:'حضور و غیاب',grades:'نمرات و کارنامه',schedule:'برنامه کلاسی',accounting:'حسابداری و امور مالی',exams:'مدیریت امتحانات',notices:'اطلاعیه‌ها',reports:'گزارش‌های مدیریتی',settings:'تنظیمات و پشتیبان‌گیری'};
+const titles={dashboard:'داشبورد مدیریتی',students:'مدیریت دانش‌آموزان',staff:'دبیران و کارکنان',attendance:'حضور و غیاب',grades:'نمرات و کارنامه',schedule:'برنامه کلاسی',accounting:'حسابداری و امور مالی',payroll:'حقوق و دستمزد',exams:'مدیریت امتحانات',notices:'اطلاعیه‌ها',reports:'گزارش‌های مدیریتی',settings:'تنظیمات و پشتیبان‌گیری'};
 let school='ابتدایی',page='dashboard',accTab='overview';
 const load=(k,d=[])=>{try{return JSON.parse(localStorage.getItem('soroush_'+k))??d}catch{return d}};
 const save=(k,v)=>localStorage.setItem('soroush_'+k,JSON.stringify(v));
-let students=load('students'),staff=load('staff'),transactions=load('transactions'),tuition=load('tuition'),accounts=load('accounts',[{name:'صندوق نقدی',type:'نقدی',balance:0},{name:'حساب بانکی مدرسه',type:'بانکی',balance:0}]),journals=load('journals'),notices=load('notices');
+let students=load('students'),staff=load('staff'),transactions=load('transactions'),tuition=load('tuition'),accounts=load('accounts',[{id:1,name:'صندوق نقدی',type:'نقدی',balance:0},{id:2,name:'حساب بانکی مدرسه',type:'بانکی',balance:0}]),journals=load('journals'),notices=load('notices'),payrolls=load('payrolls'),payrollMisc=load('payrollMisc',{});
+
+/* ========== ابزارها ========== */
+const toEnDigits=s=>String(s??'').replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d));
 const money=n=>(Number(n)||0).toLocaleString('fa-IR')+' تومان';
-const num=n=>Number(String(n||'').replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[,\s]/g,''))||0;
+const num=n=>{const s=toEnDigits(String(n??'')).replace(/[,\s\u200c]/g,'');const v=parseFloat(s);return isNaN(v)?0:v};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const today=()=>new Intl.DateTimeFormat('fa-IR').format(new Date());
+const uid=()=>Date.now()+Math.floor(Math.random()*1000);
+const monthNow=()=>{const d=new Date();return d.getFullYear()*100+d.getMonth()+1};
+const monthLabel=m=>{const y=Math.floor(m/100),mo=m%100;return `${y}/${String(mo).padStart(2,'0')}`};
+
+function toast(msg,type='ok'){const t=document.createElement('div');t.className='toast show '+type;t.textContent=msg;document.body.appendChild(t);setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),300)},2600)}
+
+/* ========== ناوبری ========== */
 function setSchool(s,el){school=s;document.querySelectorAll('.school-switch button').forEach(b=>b.classList.toggle('active',b.dataset.school===s));document.getElementById('schoolPill').textContent='واحد آموزشی: '+s;render()}
-function showPage(p,el){page=p;document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));document.getElementById('topTitle').textContent=titles[p];document.getElementById('topSub').textContent=p==='accounting'?'مدیریت یکپارچه درآمد، هزینه، شهریه و اسناد مالی':'واحد آموزشی '+school;document.getElementById('sidebar').classList.remove('open');render()}
+function showPage(p,el){page=p;document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));document.getElementById('topTitle').textContent=titles[p];document.getElementById('topSub').textContent=(p==='accounting')?'مدیریت یکپارچه درآمد، هزینه، شهریه و اسناد مالی':(p==='payroll')?'محاسبه و پرداخت حقوق پرسنل':'واحد آموزشی '+school;document.getElementById('sidebar').classList.remove('open');render()}
 function filtered(arr){return arr.filter(x=>x.school===school)}
-function render(){let c=document.getElementById('content');if(page==='dashboard')c.innerHTML=dashboard();else if(page==='students')c.innerHTML=studentsPage();else if(page==='staff')c.innerHTML=staffPage();else if(page==='accounting')c.innerHTML=accountingPage();else if(page==='attendance')c.innerHTML=genericPage('حضور و غیاب','ثبت و پیگیری وضعیت حضور دانش‌آموزان','برای ثبت وضعیت، ابتدا از بخش دانش‌آموزان پرونده ایجاد کنید.');else if(page==='grades')c.innerHTML=genericPage('نمرات و کارنامه','ثبت و تحلیل عملکرد تحصیلی','زیرساخت بخش نمرات در نسخه بعدی به پرونده دانش‌آموز متصل می‌شود.');else if(page==='schedule')c.innerHTML=genericPage('برنامه کلاسی','مدیریت برنامه هفتگی کلاس‌ها و دبیران','امکان تعریف برنامه هفتگی در توسعه بعدی فعال خواهد شد.');else if(page==='exams')c.innerHTML=genericPage('مدیریت امتحانات','تقویم امتحانات و نتایج آزمون‌ها','برای شروع، تاریخ آزمون‌ها و پایه مربوطه را در این بخش ثبت کنید.');else if(page==='notices')c.innerHTML=noticesPage();else if(page==='reports')c.innerHTML=reportsPage();else c.innerHTML=settingsPage()}
-function dashboard(){let ss=filtered(students),sf=filtered(staff),tx=filtered(transactions),inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0),out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0),due=filtered(tuition).reduce((a,t)=>a+Math.max(0,t.total-t.paid),0);return `<div class="page-head"><div><h1>خوش آمدید 👋</h1><p>نمای کلی وضعیت ${school} · سامانه <b>سروش</b></p></div><span class="watermark">ســروش</span></div><div class="grid stats">${stat('👩‍🎓','دانش‌آموزان',ss.length,'پرونده ثبت‌شده')}${stat('👩‍🏫','دبیران و کارکنان',sf.length,'پرسنل ثبت‌شده')}${stat('💰','درآمد ثبت‌شده',money(inc),'مجموع درآمدها')}${stat('📌','مانده شهریه',money(due),'بدهی ثبت‌شده دانش‌آموزان')}</div><div class="grid two"><section class="panel"><div class="panel-head"><h3>دسترسی سریع</h3><span class="muted">عملیات پرکاربرد</span></div><div class="grid quick-grid"><button class="quick" onclick="openStudent()"><span>➕</span><b>ثبت دانش‌آموز</b></button><button class="quick" onclick="openStaff()"><span>👩‍🏫</span><b>ثبت پرسنل</b></button><button class="quick" onclick="openTransaction()"><span>💳</span><b>ثبت سند مالی</b></button><button class="quick" onclick="showPage('accounting')"><span>📒</span><b>دفتر حسابداری</b></button></div></section><section class="panel"><div class="panel-head"><h3>خلاصه مالی</h3><span class="muted">بر اساس اسناد ثبت‌شده</span></div><div class="mini-cards grid"><div class="mini-card"><small>کل درآمد</small><strong class="positive">${money(inc)}</strong></div><div class="mini-card"><small>کل هزینه</small><strong class="negative">${money(out)}</strong></div><div class="mini-card"><small>خالص جریان</small><strong>${money(inc-out)}</strong></div></div></section></div><section class="panel"><div class="panel-head"><h3>آخرین دانش‌آموزان ثبت‌شده</h3><button class="btn secondary small" onclick="showPage('students')">مشاهده همه</button></div>${studentTable(ss.slice(-5).reverse())}</section>`}
 function stat(i,l,v,n){return `<div class="stat"><div class="stat-top"><span class="stat-label">${l}</span><span class="stat-icon">${i}</span></div><div class="stat-value">${v}</div><div class="stat-note">${n}</div></div>`}
-function studentsPage(){let ss=filtered(students);return `<div class="page-head"><div><h1>مدیریت دانش‌آموزان</h1><p>پرونده الکترونیکی دانش‌آموزان ${school}</p></div><button class="btn" onclick="openStudent()">＋ ثبت دانش‌آموز جدید</button></div><section class="panel"><div class="toolbar"><input class="field search" id="studentSearch" placeholder="جست‌وجو نام، نام خانوادگی یا کد ملی..." oninput="filterStudents()"><select id="gradeFilter" onchange="filterStudents()" style="border:1px solid #dfe6f0;border-radius:9px;padding:9px"><option value="">همه پایه‌ها</option>${grades[school].map(g=>`<option>${g}</option>`).join('')}</select><button class="btn secondary small" onclick="exportCSV('students')">خروجی CSV</button></div><div id="studentTable">${studentTable(ss)}</div></section>`}
-function studentTable(arr){if(!arr.length)return '<div class="empty">هنوز دانش‌آموزی ثبت نشده است.</div>';return `<div class="table-wrap"><table><thead><tr><th>نام و نام خانوادگی</th><th>پایه</th><th>کلاس</th><th>شماره تماس</th><th>ولی دانش‌آموز</th><th>عملیات</th></tr></thead><tbody>${arr.map(s=>`<tr><td><b>${esc(s.name)}</b><div class="muted">${esc(s.national||'')}</div></td><td><span class="tag">${esc(s.grade)}</span></td><td>${esc(s.cl||'—')}</td><td>${esc(s.phone||'—')}</td><td>${esc(s.parent||'—')}</td><td><button class="btn secondary small" onclick="editStudent(${s.id})">ویرایش</button> <button class="btn red small" onclick="delStudent(${s.id})">حذف</button></td></tr>`).join('')}</tbody></table></div>`}
-function filterStudents(){let q=(document.getElementById('studentSearch')?.value||'').toLowerCase(),g=document.getElementById('gradeFilter')?.value||'';let a=filtered(students).filter(s=>(s.name+' '+s.national+' '+s.phone).toLowerCase().includes(q)&&(!g||s.grade===g));document.getElementById('studentTable').innerHTML=studentTable(a)}
-function openStudent(id){let s=students.find(x=>x.id===id)||{};modal('ثبت پرونده دانش‌آموز',`<form id="studentForm" class="form-grid"><div class="field"><label>نام و نام خانوادگی *</label><input name="name" required value="${esc(s.name||'')}"></div><div class="field"><label>کد ملی</label><input name="national" value="${esc(s.national||'')}"></div><div class="field"><label>پایه تحصیلی *</label><select name="grade" required>${grades[school].map(g=>`<option ${s.grade===g?'selected':''}>${g}</option>`).join('')}</select></div><div class="field"><label>کلاس</label><input name="cl" placeholder="مثلاً الف" value="${esc(s.cl||'')}"></div><div class="field"><label>شماره تماس دانش‌آموز</label><input name="phone" value="${esc(s.phone||'')}"></div><div class="field"><label>نام و شماره تماس ولی</label><input name="parent" value="${esc(s.parent||'')}"></div><div class="field wide"><label>توضیحات</label><textarea name="note">${esc(s.note||'')}</textarea></div></form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveStudent(${id||0})">ذخیره پرونده</button></div>`)}
-function saveStudent(id){let f=document.getElementById('studentForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f));if(id){let i=students.findIndex(x=>x.id===id);students[i]={...students[i],...d}}else students.push({id:Date.now(),school,...d});save('students',students);closeModal();render()}
-function editStudent(id){openStudent(id)}function delStudent(id){if(confirm('پرونده دانش‌آموز حذف شود؟')){students=students.filter(x=>x.id!==id);save('students',students);render()}}
-function staffPage(){let a=filtered(staff);return `<div class="page-head"><div><h1>دبیران و کارکنان</h1><p>مدیریت پرونده پرسنلی واحد ${school}</p></div><button class="btn" onclick="openStaff()">＋ ثبت پرسنل</button></div><section class="panel">${a.length?`<div class="table-wrap"><table><thead><tr><th>نام و نام خانوادگی</th><th>سمت</th><th>تخصص / درس</th><th>شماره تماس</th><th>حقوق ماهانه</th><th>عملیات</th></tr></thead><tbody>${a.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.role)}</td><td>${esc(x.subject||'—')}</td><td>${esc(x.phone||'—')}</td><td>${money(x.salary)}</td><td><button class="btn red small" onclick="delStaff(${x.id})">حذف</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">هنوز پرسنلی ثبت نشده است.</div>'}</section>`}
-function openStaff(){modal('ثبت دبیر یا کارمند',`<form id="staffForm" class="form-grid"><div class="field"><label>نام و نام خانوادگی *</label><input name="name" required></div><div class="field"><label>سمت</label><select name="role"><option>دبیر</option><option>مدیر</option><option>معاون</option><option>مربی</option><option>کارمند اداری</option><option>خدمات</option><option>حسابدار</option></select></div><div class="field"><label>درس / تخصص</label><input name="subject"></div><div class="field"><label>شماره تماس</label><input name="phone"></div><div class="field wide"><label>حقوق ماهانه (تومان)</label><input name="salary" type="number" min="0"></div></form><div class="modal-actions"><button class="btn" onclick="saveStaff()">ذخیره اطلاعات</button></div>`)}
-function saveStaff(){let f=document.getElementById('staffForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f));d.salary=num(d.salary);staff.push({id:Date.now(),school,...d});save('staff',staff);closeModal();render()}function delStaff(id){if(confirm('حذف شود؟')){staff=staff.filter(x=>x.id!==id);save('staff',staff);render()}}
-function accountingPage(){let tx=filtered(transactions),inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0),out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0),balance=accounts.filter(a=>a.school===school||!a.school).reduce((a,x)=>a+(Number(x.balance)||0),0),due=filtered(tuition).reduce((a,t)=>a+Math.max(0,t.total-t.paid),0);let tabs=[['overview','نمای کلی'],['transactions','دریافت و پرداخت'],['tuition','شهریه و اقساط'],['accounts','صندوق و بانک'],['journal','اسناد حسابداری'],['reports','گزارش مالی']];return `<div class="page-head"><div><h1>مرکز هوشمند حسابداری سروش</h1><p>دفتر مالی مستقل واحد آموزشی ${school}</p></div><button class="btn" onclick="openTransaction()">＋ ثبت سند مالی</button></div><div class="accounting-banner"><div><h2>حسابداری یکپارچه <span style="color:#6cc9ff">سروش</span></h2><p>کنترل درآمد، هزینه، مطالبات، بدهی‌ها و گردش نقدینگی</p></div><div><div class="muted" style="color:#c8d9f4">خالص درآمد عملیاتی</div><div class="money">${money(inc-out)}</div></div></div><div class="grid stats">${stat('📥','مجموع درآمد',money(inc),'اسناد درآمدی')}${stat('📤','مجموع هزینه',money(out),'اسناد هزینه‌ای')}${stat('🧾','مطالبات شهریه',money(due),'مانده دریافتنی')}${stat('🏦','مانده حساب‌ها',money(balance),'صندوق و بانک')}</div><section class="panel"><div class="tabs">${tabs.map(t=>`<button class="${accTab===t[0]?'active':''}" onclick="accTab='${t[0]}';render()">${t[1]}</button>`).join('')}</div><div id="accContent">${accountTabContent(tx,inc,out,due)}</div></section>`}
-function accountTabContent(tx,inc,out,due){if(accTab==='overview')return `<div class="grid mini-cards"><div class="mini-card"><small>درآمد این واحد</small><strong class="positive">${money(inc)}</strong><div class="barline"><i style="width:${inc+out?inc/(inc+out)*100:0}%"></i></div></div><div class="mini-card"><small>هزینه این واحد</small><strong class="negative">${money(out)}</strong><div class="barline"><i style="width:${inc+out?out/(inc+out)*100:0}%"></i></div></div><div class="mini-card"><small>تعداد اسناد مالی</small><strong>${tx.length.toLocaleString('fa-IR')}</strong></div></div><h3 style="font-size:12px;margin-top:22px">آخرین تراکنش‌ها</h3>${transactionTable(tx.slice().reverse().slice(0,8))}<div class="toolbar"><button class="btn" onclick="openTransaction()">ثبت دریافت یا پرداخت</button><button class="btn secondary" onclick="accTab='tuition';render()">مدیریت شهریه‌ها</button></div>`;
-if(accTab==='transactions')return `<div class="toolbar"><input class="field search" id="txSearch" placeholder="جست‌وجوی شرح یا طرف حساب..." oninput="filterTx()"><button class="btn" onclick="openTransaction()">＋ ثبت تراکنش</button><button class="btn secondary small" onclick="exportCSV('transactions')">خروجی CSV</button></div><div id="txTable">${transactionTable(tx.slice().reverse())}</div>`;
-if(accTab==='tuition')return tuitionContent();
-if(accTab==='accounts')return accountsContent();
-if(accTab==='journal')return journalContent();
-return `<h3 style="font-size:13px">گزارش عملکرد مالی ${school}</h3><div class="grid mini-cards"><div class="mini-card"><small>جمع درآمد</small><strong class="positive">${money(inc)}</strong></div><div class="mini-card"><small>جمع هزینه</small><strong class="negative">${money(out)}</strong></div><div class="mini-card"><small>مانده خالص</small><strong>${money(inc-out)}</strong></div></div><p class="muted" style="margin-top:15px">گزارش بر اساس تراکنش‌های ثبت‌شده در این مرورگر تهیه شده است.</p><button class="btn secondary" onclick="window.print()">چاپ گزارش</button>`}
-function transactionTable(a){if(!a.length)return '<div class="empty">سندی ثبت نشده است.</div>';return `<div class="table-wrap"><table><thead><tr><th>تاریخ</th><th>نوع</th><th>سرفصل</th><th>طرف حساب</th><th>روش</th><th>مبلغ</th><th>شرح</th><th>عملیات</th></tr></thead><tbody>${a.map(t=>`<tr><td>${esc(t.date)}</td><td><span class="tag ${t.kind==='درآمد'?'green':'red'}">${t.kind}</span></td><td>${esc(t.category)}</td><td>${esc(t.party||'—')}</td><td>${esc(t.method)}</td><td><b>${money(t.amount)}</b></td><td>${esc(t.desc||'—')}</td><td><button class="btn red small" onclick="delTx(${t.id})">حذف</button></td></tr>`).join('')}</tbody></table></div>`}
-function openTransaction(){modal('ثبت دریافت / پرداخت مالی',`<form id="txForm" class="form-grid"><div class="field"><label>نوع عملیات *</label><select name="kind"><option>درآمد</option><option>هزینه</option></select></div><div class="field"><label>تاریخ *</label><input name="date" type="text" placeholder="۱۴۰۵/۰۸/۱۳" required value="${new Intl.DateTimeFormat('fa-IR').format(new Date())}"></div><div class="field"><label>سرفصل حساب *</label><select name="category"><option>شهریه</option><option>ثبت‌نام</option><option>کمک و مشارکت</option><option>فروش خدمات آموزشی</option><option>حقوق و دستمزد</option><option>اجاره</option><option>آب، برق و گاز</option><option>تجهیزات و ملزومات</option><option>تعمیر و نگهداری</option><option>هزینه آموزشی</option><option>هزینه اداری</option><option>سایر</option></select></div><div class="field"><label>مبلغ (تومان) *</label><input name="amount" type="number" min="1" required></div><div class="field"><label>طرف حساب</label><input name="party" placeholder="نام شخص، شرکت یا دانش‌آموز"></div><div class="field"><label>روش پرداخت</label><select name="method"><option>نقدی</option><option>کارت‌خوان</option><option>کارت به کارت</option><option>واریز بانکی</option><option>چک</option><option>آنلاین</option></select></div><div class="field wide"><label>شرح و توضیحات</label><textarea name="desc" placeholder="توضیحات تکمیلی سند..."></textarea></div></form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveTx()">ثبت سند مالی</button></div>`)}
-function saveTx(){let f=document.getElementById('txForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f));d.amount=num(d.amount);transactions.push({id:Date.now(),school,...d});save('transactions',transactions);closeModal();render()}
-function delTx(id){if(confirm('این تراکنش حذف شود؟')){transactions=transactions.filter(t=>t.id!==id);save('transactions',transactions);render()}}
+
+function render(){let c=document.getElementById('content');
+ if(page==='dashboard')c.innerHTML=dashboard();
+ else if(page==='students')c.innerHTML=studentsPage();
+ else if(page==='staff')c.innerHTML=staffPage();
+ else if(page==='accounting')c.innerHTML=accountingPage();
+ else if(page==='payroll')c.innerHTML=payrollPage();
+ else if(page==='attendance')c.innerHTML=genericPage('حضور و غیاب','ثبت و پیگیری وضعیت حضور دانش‌آموزان','برای ثبت وضعیت، ابتدا از بخش دانش‌آموزان پرونده ایجاد کنید.');
+ else if(page==='grades')c.innerHTML=genericPage('نمرات و کارنامه','ثبت و تحلیل عملکرد تحصیلی','زیرساخت بخش نمرات در نسخه بعدی به پرونده دانش‌آموز متصل می‌شود.');
+ else if(page==='schedule')c.innerHTML=genericPage('برنامه کلاسی','مدیریت برنامه هفتگی کلاس‌ها و دبیران','امکان تعریف برنامه هفتگی در توسعه بعدی فعال خواهد شد.');
+ else if(page==='exams')c.innerHTML=genericPage('مدیریت امتحانات','تقویم امتحانات و نتایج آزمون‌ها','برای شروع، تاریخ آزمون‌ها و پایه مربوطه را در این بخش ثبت کنید.');
+ else if(page==='notices')c.innerHTML=noticesPage();
+ else if(page==='reports')c.innerHTML=reportsPage();
+ else c.innerHTML=settingsPage()}
+
+/* ========== داشبورد ========== */
+function dashboard(){
+ let ss=filtered(students),sf=filtered(staff),tx=filtered(transactions);
+ let inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0);
+ let out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0);
+ let due=filtered(tuition).reduce((a,t)=>a+Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0)),0);
+ let unpaidPayroll=filtered(payrolls).filter(p=>p.status!=='پرداخت‌شده').reduce((a,p)=>a+p.net,0);
+ return `<div class="page-head"><div><h1>خوش آمدید 👋</h1><p>نمای کلی وضعیت ${school} · سامانه <b>سروش</b></p></div><span class="watermark">ســروش</span></div>
+ <div class="grid stats">
+  ${stat('👩‍🎓','دانش‌آموزان',ss.length.toLocaleString('fa-IR'),'پرونده ثبت‌شده')}
+  ${stat('👩‍🏫','دبیران و کارکنان',sf.length.toLocaleString('fa-IR'),'پرسنل ثبت‌شده')}
+  ${stat('💰','درآمد ثبت‌شده',money(inc),'مجموع درآمدها')}
+  ${stat('📌','مانده شهریه',money(due),'بدهی ثبت‌شده دانش‌آموزان')}
+ </div>
+ <div class="grid two">
+  <section class="panel"><div class="panel-head"><h3>دسترسی سریع</h3><span class="muted">عملیات پرکاربرد</span></div>
+   <div class="grid quick-grid">
+    <button class="quick" onclick="openStudent()"><span>➕</span><b>ثبت دانش‌آموز</b></button>
+    <button class="quick" onclick="openStaff()"><span>👩‍🏫</span><b>ثبت پرسنل</b></button>
+    <button class="quick" onclick="openTransaction()"><span>💳</span><b>ثبت سند مالی</b></button>
+    <button class="quick" onclick="showPage('accounting')"><span>📒</span><b>دفتر حسابداری</b></button>
+    <button class="quick" onclick="openPayroll()"><span>💵</span><b>محاسبه حقوق</b></button>
+    <button class="quick" onclick="openTuition()"><span>🎓</span><b>تعریف شهریه</b></button>
+    <button class="quick" onclick="showPage('reports')"><span>📈</span><b>گزارش‌ها</b></button>
+    <button class="quick" onclick="openNotice()"><span>📣</span><b>اطلاعیه</b></button>
+   </div></section>
+  <section class="panel"><div class="panel-head"><h3>خلاصه مالی</h3><span class="muted">بر اساس اسناد ثبت‌شده</span></div>
+   <div class="mini-cards grid">
+    <div class="mini-card"><small>کل درآمد</small><strong class="positive">${money(inc)}</strong></div>
+    <div class="mini-card"><small>کل هزینه</small><strong class="negative">${money(out)}</strong></div>
+    <div class="mini-card"><small>خالص جریان</small><strong>${money(inc-out)}</strong></div>
+   </div>
+   ${unpaidPayroll>0?`<p class="muted" style="margin-top:12px">💡 حقوق پرداخت‌نشده: <b class="negative">${money(unpaidPayroll)}</b></p>`:''}
+  </section>
+ </div>
+ <section class="panel"><div class="panel-head"><h3>آخرین دانش‌آموزان ثبت‌شده</h3><button class="btn secondary small" onclick="showPage('students')">مشاهده همه</button></div>${studentTable(ss.slice(-5).reverse())}</section>`;
+}
+
+/* ========== دانش‌آموزان ========== */
+function studentsPage(){
+ let ss=filtered(students);
+ return `<div class="page-head"><div><h1>مدیریت دانش‌آموزان</h1><p>پرونده الکترونیکی دانش‌آموزان ${school}</p></div><button class="btn" onclick="openStudent()">＋ ثبت دانش‌آموز جدید</button></div>
+ <section class="panel"><div class="toolbar">
+  <input class="field search" id="studentSearch" placeholder="جست‌وجو نام، نام خانوادگی یا کد ملی..." oninput="filterStudents()">
+  <select id="gradeFilter" onchange="filterStudents()" style="border:1px solid #dfe6f0;border-radius:9px;padding:9px"><option value="">همه پایه‌ها</option>${grades[school].map(g=>`<option>${g}</option>`).join('')}</select>
+  <button class="btn secondary small" onclick="exportCSV('students')">خروجی CSV</button>
+ </div><div id="studentTable">${studentTable(ss)}</div></section>`;
+}
+
+function studentTable(arr){
+ if(!arr.length)return '<div class="empty">هنوز دانش‌آموزی ثبت نشده است.</div>';
+ return `<div class="table-wrap"><table><thead><tr><th>نام و نام خانوادگی</th><th>پایه</th><th>کلاس</th><th>شماره تماس</th><th>ولی دانش‌آموز</th><th>عملیات</th></tr></thead><tbody>
+ ${arr.map(s=>`<tr><td><b>${esc(s.name)}</b><div class="muted">${esc(s.national||'')}</div></td><td><span class="tag">${esc(s.grade)}</span></td><td>${esc(s.cl||'—')}</td><td>${esc(s.phone||'—')}</td><td>${esc(s.parent||'—')}</td><td class="actions-cell"><button class="btn secondary small" onclick="editStudent(${s.id})">ویرایش</button> <button class="btn secondary small" onclick="quickTuitionFor(${s.id})">شهریه</button> <button class="btn red small" onclick="delStudent(${s.id})">حذف</button></td></tr>`).join('')}
+ </tbody></table></div>`;
+}
+
+function filterStudents(){
+ let q=(document.getElementById('studentSearch')?.value||'').toLowerCase();
+ let g=document.getElementById('gradeFilter')?.value||'';
+ let a=filtered(students).filter(s=>(s.name+' '+s.national+' '+s.phone).toLowerCase().includes(q)&&(!g||s.grade===g));
+ document.getElementById('studentTable').innerHTML=studentTable(a);
+}
+
+function openStudent(id){
+ let s=students.find(x=>x.id===id)||{};
+ modal('ثبت پرونده دانش‌آموز',`<form id="studentForm" class="form-grid">
+  <div class="field"><label>نام و نام خانوادگی *</label><input name="name" required value="${esc(s.name||'')}"></div>
+  <div class="field"><label>کد ملی</label><input name="national" value="${esc(s.national||'')}"></div>
+  <div class="field"><label>پایه تحصیلی *</label><select name="grade" required>${grades[school].map(g=>`<option ${s.grade===g?'selected':''}>${g}</option>`).join('')}</select></div>
+  <div class="field"><label>کلاس</label><input name="cl" placeholder="مثلاً الف" value="${esc(s.cl||'')}"></div>
+  <div class="field"><label>شماره تماس دانش‌آموز</label><input name="phone" value="${esc(s.phone||'')}"></div>
+  <div class="field"><label>نام و شماره تماس ولی</label><input name="parent" value="${esc(s.parent||'')}"></div>
+  <div class="field wide"><label>توضیحات</label><textarea name="note">${esc(s.note||'')}</textarea></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveStudent(${id||0})">ذخیره پرونده</button></div>`);
+}
+
+function saveStudent(id){
+ let f=document.getElementById('studentForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));
+ if(id){let i=students.findIndex(x=>x.id===id);students[i]={...students[i],...d}}
+ else students.push({id:uid(),school,...d});
+ save('students',students);closeModal();render();toast(id?'پرونده به‌روزرسانی شد':'دانش‌آموز جدید ثبت شد');
+}
+
+function editStudent(id){openStudent(id)}
+function delStudent(id){
+ if(!confirm('پرونده دانش‌آموز و پرونده شهریه مرتبط حذف شود؟'))return;
+ students=students.filter(x=>x.id!==id);save('students',students);
+ tuition=tuition.filter(t=>t.studentId!==id);save('tuition',tuition);
+ render();toast('پرونده دانش‌آموز حذف شد');
+}
+function quickTuitionFor(id){const t=tuition.find(x=>x.studentId===id);if(t)payTuition(t.id);else openTuition(id)}
+
+/* ========== پرسنل ========== */
+function staffPage(){
+ let a=filtered(staff);
+ return `<div class="page-head"><div><h1>دبیران و کارکنان</h1><p>مدیریت پرونده پرسنلی واحد ${school}</p></div><button class="btn" onclick="openStaff()">＋ ثبت پرسنل</button></div>
+ <section class="panel">${a.length?`<div class="table-wrap"><table><thead><tr><th>نام و نام خانوادگی</th><th>سمت</th><th>تخصص / درس</th><th>شماره تماس</th><th>حقوق پایه</th><th>عملیات</th></tr></thead><tbody>
+ ${a.map(x=>`<tr><td><b>${esc(x.name)}</b></td><td>${esc(x.role)}</td><td>${esc(x.subject||'—')}</td><td>${esc(x.phone||'—')}</td><td>${money(x.salary)}</td><td class="actions-cell"><button class="btn secondary small" onclick="editStaff(${x.id})">ویرایش</button> <button class="btn red small" onclick="delStaff(${x.id})">حذف</button></td></tr>`).join('')}
+ </tbody></table></div>`:'<div class="empty">هنوز پرسنلی ثبت نشده است.</div>'}</section>`;
+}
+
+function openStaff(id){
+ let s=staff.find(x=>x.id===id)||{};
+ modal(id?'ویرایش پرونده پرسنلی':'ثبت دبیر یا کارمند',`<form id="staffForm" class="form-grid">
+  <div class="field"><label>نام و نام خانوادگی *</label><input name="name" required value="${esc(s.name||'')}"></div>
+  <div class="field"><label>سمت</label><select name="role">${['دبیر','مدیر','معاون','مربی','کارمند اداری','خدمات','حسابدار'].map(r=>`<option ${s.role===r?'selected':''}>${r}</option>`).join('')}</select></div>
+  <div class="field"><label>درس / تخصص</label><input name="subject" value="${esc(s.subject||'')}"></div>
+  <div class="field"><label>شماره تماس</label><input name="phone" value="${esc(s.phone||'')}"></div>
+  <div class="field wide"><label>حقوق ماهانه پایه (تومان)</label><input name="salary" type="number" min="0" value="${s.salary||''}"></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveStaff(${id||0})">ذخیره اطلاعات</button></div>`);
+}
+
+function saveStaff(id){
+ let f=document.getElementById('staffForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));d.salary=num(d.salary);
+ if(id){let i=staff.findIndex(x=>x.id===id);staff[i]={...staff[i],...d}}
+ else staff.push({id:uid(),school,...d});
+ save('staff',staff);closeModal();render();toast(id?'اطلاعات پرسنل به‌روزرسانی شد':'پرسنل جدید ثبت شد');
+}
+function editStaff(id){openStaff(id)}
+function delStaff(id){if(confirm('حذف شود؟')){staff=staff.filter(x=>x.id!==id);save('staff',staff);render();toast('پرسنل حذف شد')}}
+
+/* ========== حسابداری ========== */
+function accountingPage(){
+ let tx=filtered(transactions);
+ let inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0);
+ let out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0);
+ let balance=accounts.filter(a=>!a.school||a.school===school).reduce((a,x)=>a+(Number(x.balance)||0),0);
+ let due=filtered(tuition).reduce((a,t)=>a+Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0)),0);
+ let tabs=[['overview','نمای کلی'],['transactions','دریافت و پرداخت'],['tuition','شهریه و اقساط'],['accounts','صندوق و بانک'],['journal','اسناد حسابداری'],['reports','گزارش مالی']];
+ return `<div class="page-head"><div><h1>مرکز هوشمند حسابداری سروش</h1><p>دفتر مالی مستقل واحد آموزشی ${school}</p></div><button class="btn" onclick="openTransaction()">＋ ثبت سند مالی</button></div>
+ <div class="accounting-banner"><div><h2>حسابداری یکپارچه <span style="color:#6cc9ff">سروش</span></h2><p>کنترل درآمد، هزینه، مطالبات، بدهی‌ها و گردش نقدینگی</p></div><div><div class="muted" style="color:#c8d9f4">خالص درآمد عملیاتی</div><div class="money">${money(inc-out)}</div></div></div>
+ <div class="grid stats">
+  ${stat('📥','مجموع درآمد',money(inc),'اسناد درآمدی')}
+  ${stat('📤','مجموع هزینه',money(out),'اسناد هزینه‌ای')}
+  ${stat('🧾','مطالبات شهریه',money(due),'مانده دریافتنی')}
+  ${stat('🏦','مانده حساب‌ها',money(balance),'صندوق و بانک')}
+ </div>
+ <section class="panel"><div class="tabs">${tabs.map(t=>`<button class="${accTab===t[0]?'active':''}" onclick="accTab='${t[0]}';render()">${t[1]}</button>`).join('')}</div><div id="accContent">${accountTabContent(tx,inc,out,due)}</div></section>`;
+}
+
+function accountTabContent(tx,inc,out,due){
+ if(accTab==='overview'){
+  return `<div class="grid mini-cards">
+   <div class="mini-card"><small>درآمد این واحد</small><strong class="positive">${money(inc)}</strong><div class="barline"><i style="width:${(inc+out)?Math.min(100,inc/(inc+out)*100):0}%"></i></div></div>
+   <div class="mini-card"><small>هزینه این واحد</small><strong class="negative">${money(out)}</strong><div class="barline"><i style="width:${(inc+out)?Math.min(100,out/(inc+out)*100):0}%"></i></div></div>
+   <div class="mini-card"><small>تعداد اسناد مالی</small><strong>${tx.length.toLocaleString('fa-IR')}</strong></div>
+  </div>
+  <h3 class="section-title">آخرین تراکنش‌ها</h3>${transactionTable(tx.slice().reverse().slice(0,8))}
+  <div class="toolbar"><button class="btn" onclick="openTransaction()">ثبت دریافت یا پرداخت</button><button class="btn secondary" onclick="accTab='tuition';render()">مدیریت شهریه‌ها</button></div>`;
+ }
+ if(accTab==='transactions'){
+  return `<div class="toolbar"><input class="field search" id="txSearch" placeholder="جست‌وجوی شرح یا طرف حساب..." oninput="filterTx()"><button class="btn" onclick="openTransaction()">＋ ثبت تراکنش</button><button class="btn secondary small" onclick="exportCSV('transactions')">خروجی CSV</button></div><div id="txTable">${transactionTable(tx.slice().reverse())}</div>`;
+ }
+ if(accTab==='tuition')return tuitionContent();
+ if(accTab==='accounts')return accountsContent();
+ if(accTab==='journal')return journalContent();
+ // reports
+ let byCat={};tx.forEach(t=>{const k=t.category||'سایر';byCat[k]=(byCat[k]||0)+t.amount});
+ let rows=Object.entries(byCat).sort((a,b)=>b[1]-a[1]);
+ return `<h3 class="section-title">گزارش عملکرد مالی ${school}</h3>
+  <div class="grid mini-cards">
+   <div class="mini-card"><small>جمع درآمد</small><strong class="positive">${money(inc)}</strong></div>
+   <div class="mini-card"><small>جمع هزینه</small><strong class="negative">${money(out)}</strong></div>
+   <div class="mini-card"><small>مانده خالص</small><strong>${money(inc-out)}</strong></div>
+  </div>
+  <h3 class="section-title">تفکیک بر اساس سرفصل</h3>
+  ${rows.length?rows.map(([k,v])=>`<div style="margin:10px 0"><div style="display:flex;justify-content:space-between;font-size:11px"><span>${esc(k)}</span><b>${money(v)}</b></div><div class="barline"><i style="width:${(inc+out)?Math.min(100,v/(inc+out)*100):0}%"></i></div></div>`).join(''):'<div class="empty">داده‌ای نیست</div>'}
+  <p class="muted" style="margin-top:15px">گزارش بر اساس تراکنش‌های ثبت‌شده در این مرورگر تهیه شده است.</p>
+  <button class="btn secondary" onclick="window.print()">چاپ گزارش</button>`;
+}
+
+function transactionTable(a){
+ if(!a.length)return '<div class="empty">سندی ثبت نشده است.</div>';
+ return `<div class="table-wrap"><table><thead><tr><th>تاریخ</th><th>نوع</th><th>سرفصل</th><th>طرف حساب</th><th>روش</th><th>مبلغ</th><th>شرح</th><th>عملیات</th></tr></thead><tbody>
+ ${a.map(t=>`<tr><td>${esc(t.date)}</td><td><span class="tag ${t.kind==='درآمد'?'green':'red'}">${t.kind}</span></td><td>${esc(t.category)}</td><td>${esc(t.party||'—')}</td><td>${esc(t.method)}</td><td><b>${money(t.amount)}</b></td><td>${esc(t.desc||'—')}</td><td><button class="btn red small" onclick="delTx(${t.id})">حذف</button></td></tr>`).join('')}
+ </tbody></table></div>`;
+}
+
+function openTransaction(){
+ modal('ثبت دریافت / پرداخت مالی',`<form id="txForm" class="form-grid">
+  <div class="field"><label>نوع عملیات *</label><select name="kind"><option>درآمد</option><option>هزینه</option></select></div>
+  <div class="field"><label>تاریخ *</label><input name="date" required value="${today()}"></div>
+  <div class="field"><label>سرفصل حساب *</label><select name="category"><option>شهریه</option><option>ثبت‌نام</option><option>کمک و مشارکت</option><option>فروش خدمات آموزشی</option><option>حقوق و دستمزد</option><option>اجاره</option><option>آب، برق و گاز</option><option>تجهیزات و ملزومات</option><option>تعمیر و نگهداری</option><option>هزینه آموزشی</option><option>هزینه اداری</option><option>سایر</option></select></div>
+  <div class="field"><label>مبلغ (تومان) *</label><input name="amount" type="number" min="1" required></div>
+  <div class="field"><label>طرف حساب</label><input name="party" placeholder="نام شخص، شرکت یا دانش‌آموز"></div>
+  <div class="field"><label>روش پرداخت</label><select name="method"><option>نقدی</option><option>کارت‌خوان</option><option>کارت به کارت</option><option>واریز بانکی</option><option>چک</option><option>آنلاین</option></select></div>
+  <div class="field wide"><label>شرح و توضیحات</label><textarea name="desc" placeholder="توضیحات تکمیلی سند..."></textarea></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveTx()">ثبت سند مالی</button></div>`);
+}
+
+function saveTx(){
+ let f=document.getElementById('txForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));d.amount=num(d.amount);
+ if(d.amount<1){toast('مبلغ معتبر وارد کنید','err');return}
+ transactions.push({id:uid(),school,...d});save('transactions',transactions);
+ closeModal();render();toast('سند مالی ثبت شد');
+}
+function delTx(id){if(confirm('این تراکنش حذف شود؟')){transactions=transactions.filter(t=>t.id!==id);save('transactions',transactions);render();toast('تراکنش حذف شد')}}
 function filterTx(){let q=document.getElementById('txSearch').value.toLowerCase();let a=filtered(transactions).filter(t=>(t.party+' '+t.desc+' '+t.category).toLowerCase().includes(q));document.getElementById('txTable').innerHTML=transactionTable(a.slice().reverse())}
-function tuitionContent(){let a=filtered(tuition),ss=filtered(students);return `<div class="toolbar"><button class="btn" onclick="openTuition()">＋ تعریف شهریه دانش‌آموز</button><button class="btn secondary small" onclick="exportCSV('tuition')">خروجی CSV</button></div>${a.length?`<div class="table-wrap"><table><thead><tr><th>دانش‌آموز</th><th>پایه</th><th>شهریه مصوب</th><th>تخفیف</th><th>مبلغ پرداختی</th><th>مانده</th><th>سررسید</th><th>وضعیت</th><th>عملیات</th></tr></thead><tbody>${a.map(t=>`<tr><td>${esc(t.name)}</td><td>${esc(t.grade)}</td><td>${money(t.total)}</td><td>${money(t.discount)}</td><td>${money(t.paid)}</td><td><b>${money(Math.max(0,t.total-t.discount-t.paid))}</b></td><td>${esc(t.due||'—')}</td><td><span class="tag ${t.paid>=t.total-t.discount?'green':'orange'}">${t.paid>=t.total-t.discount?'تسویه':'بدهکار'}</span></td><td><button class="btn secondary small" onclick="payTuition(${t.id})">ثبت پرداخت</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">هنوز پرونده شهریه‌ای تعریف نشده است.</div>'}<p class="muted">مبلغ مانده بر اساس شهریه پس از تخفیف محاسبه می‌شود.</p>`}
-function openTuition(){let ss=filtered(students);if(!ss.length){alert('ابتدا دانش‌آموز ثبت کنید.');return}modal('تعریف شهریه و برنامه پرداخت',`<form id="tuitionForm" class="form-grid"><div class="field wide"><label>انتخاب دانش‌آموز *</label><select name="student" required>${ss.map(s=>`<option value="${s.id}">${esc(s.name)} — ${esc(s.grade)}</option>`).join('')}</select></div><div class="field"><label>شهریه مصوب (تومان)</label><input name="total" type="number" min="0" required></div><div class="field"><label>تخفیف (تومان)</label><input name="discount" type="number" min="0" value="0"></div><div class="field"><label>پرداخت اولیه (تومان)</label><input name="paid" type="number" min="0" value="0"></div><div class="field"><label>سررسید نهایی</label><input name="due" placeholder="۱۴۰۵/۰۹/۳۰"></div><div class="field wide"><label>توضیحات / تعداد اقساط</label><input name="note" placeholder="مثلاً ۴ قسط ماهانه"></div></form><div class="modal-actions"><button class="btn" onclick="saveTuition()">ذخیره شهریه</button></div>`)}
-function saveTuition(){let f=document.getElementById('tuitionForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f)),s=students.find(x=>x.id==d.student);['total','discount','paid'].forEach(k=>d[k]=num(d[k]));tuition.push({id:Date.now(),school,name:s.name,grade:s.grade,...d});if(d.paid>0){transactions.push({id:Date.now()+1,school,kind:'درآمد',date:new Intl.DateTimeFormat('fa-IR').format(new Date()),category:'شهریه',amount:d.paid,party:s.name,method:'نقدی',desc:'پرداخت اولیه شهریه'});save('transactions',transactions)}save('tuition',tuition);closeModal();render()}
-function payTuition(id){let t=tuition.find(x=>x.id===id),v=prompt('مبلغ دریافتی (تومان):');if(v===null)return;let amount=num(v);if(!amount||amount<1)return alert('مبلغ معتبر وارد کنید.');t.paid+=amount;transactions.push({id:Date.now(),school,kind:'درآمد',date:new Intl.DateTimeFormat('fa-IR').format(new Date()),category:'شهریه',amount,party:t.name,method:'نقدی',desc:'وصول قسط / مانده شهریه'});save('tuition',tuition);save('transactions',transactions);render()}
-function accountsContent(){let a=accounts.filter(x=>!x.school||x.school===school);return `<div class="toolbar"><button class="btn" onclick="openAccount()">＋ افزودن صندوق یا حساب بانکی</button></div><div class="grid mini-cards">${a.map(x=>`<div class="mini-card"><small>${esc(x.type)}</small><strong>${esc(x.name)}</strong><div style="margin-top:8px">${money(x.balance)}</div></div>`).join('')}</div><p class="muted" style="margin-top:15px">در این نسخه، مانده حساب‌ها به‌صورت دستی تعریف می‌شود. تطبیق خودکار تراکنش‌ها با حساب بانکی در اتصال نسخه آنلاین اضافه خواهد شد.</p>`}
-function openAccount(){modal('افزودن صندوق / حساب بانکی',`<form id="accountForm" class="form-grid"><div class="field"><label>عنوان حساب</label><input name="name" required></div><div class="field"><label>نوع حساب</label><select name="type"><option>نقدی</option><option>بانکی</option><option>تنخواه</option></select></div><div class="field wide"><label>مانده افتتاحیه (تومان)</label><input name="balance" type="number" value="0"></div></form><div class="modal-actions"><button class="btn" onclick="saveAccount()">ذخیره حساب</button></div>`)}
-function saveAccount(){let f=document.getElementById('accountForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f));d.balance=num(d.balance);accounts.push({...d,school});save('accounts',accounts);closeModal();render()}
-function journalContent(){return `<div class="toolbar"><button class="btn" onclick="openJournal()">＋ ثبت سند حسابداری دوطرفه</button></div>${journals.filter(j=>j.school===school).length?`<div class="table-wrap"><table><thead><tr><th>شماره سند</th><th>تاریخ</th><th>شرح</th><th>حساب بدهکار</th><th>حساب بستانکار</th><th>مبلغ</th></tr></thead><tbody>${journals.filter(j=>j.school===school).map(j=>`<tr><td>${j.no}</td><td>${esc(j.date)}</td><td>${esc(j.desc)}</td><td>${esc(j.debit)}</td><td>${esc(j.credit)}</td><td>${money(j.amount)}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">هنوز سند حسابداری ثبت نشده است.</div>'}<p class="muted">ثبت سند دوطرفه، توازن بدهکار و بستانکار را برقرار می‌کند؛ برای گزارش‌های رسمی و صورت‌های مالی نهایی، حساب‌ها باید با استاندارد حسابداری و نظر حسابدار مدرسه تنظیم شوند.</p>`}
-function openJournal(){modal('ثبت سند حسابداری دوطرفه',`<form id="journalForm" class="form-grid"><div class="field"><label>تاریخ</label><input name="date" required value="${new Intl.DateTimeFormat('fa-IR').format(new Date())}"></div><div class="field"><label>شماره سند</label><input name="no" value="${journals.length+1}" required></div><div class="field"><label>حساب بدهکار</label><select name="debit"><option>صندوق</option><option>بانک</option><option>حساب‌های دریافتنی</option><option>هزینه حقوق</option><option>هزینه اجاره</option><option>تجهیزات</option></select></div><div class="field"><label>حساب بستانکار</label><select name="credit"><option>درآمد شهریه</option><option>بانک</option><option>صندوق</option><option>حساب‌های پرداختنی</option><option>سرمایه</option></select></div><div class="field"><label>مبلغ (تومان)</label><input name="amount" type="number" min="1" required></div><div class="field"><label>شرح سند</label><input name="desc" required></div></form><div class="modal-actions"><button class="btn" onclick="saveJournal()">ثبت سند</button></div>`)}
-function saveJournal(){let f=document.getElementById('journalForm');if(!f.reportValidity())return;let d=Object.fromEntries(new FormData(f));d.amount=num(d.amount);if(d.debit===d.credit)return alert('حساب بدهکار و بستانکار نمی‌توانند یکسان باشند.');journals.push({id:Date.now(),school,...d});save('journals',journals);closeModal();render()}
-function genericPage(h,p,n){return `<div class="page-head"><div><h1>${h}</h1><p>${p}</p></div><span class="watermark">سروش</span></div><section class="panel"><div class="empty"><div style="font-size:35px">🚧</div><b>${h}</b><p>${n}</p><span class="tag">در حال توسعه</span></div></section>`}
-function noticesPage(){let a=filtered(notices);return `<div class="page-head"><div><h1>اطلاعیه‌های مدرسه</h1><p>ثبت و آرشیو پیام‌های داخلی</p></div><button class="btn" onclick="openNotice()">＋ اطلاعیه جدید</button></div><section class="panel">${a.length?a.slice().reverse().map(n=>`<div style="padding:13px;border-bottom:1px solid var(--line)"><b>${esc(n.title)}</b><p class="muted">${esc(n.body)}</p><small class="muted">${esc(n.date)}</small></div>`).join(''):'<div class="empty">اطلاعیه‌ای ثبت نشده است.</div>'}</section>`}
-function openNotice(){modal('ثبت اطلاعیه',`<form id="noticeForm" class="form-grid"><div class="field wide"><label>عنوان</label><input name="title" required></div><div class="field wide"><label>متن اطلاعیه</label><textarea name="body" rows="4" required></textarea></div></form><div class="modal-actions"><button class="btn" onclick="saveNotice()">انتشار اطلاعیه</button></div>`)}
-function saveNotice(){let f=document.getElementById('noticeForm');if(!f.reportValidity())return;notices.push({id:Date.now(),school,date:new Intl.DateTimeFormat('fa-IR').format(new Date()),...Object.fromEntries(new FormData(f))});save('notices',notices);closeModal();render()}
-function reportsPage(){let ss=filtered(students),tx=filtered(transactions),inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0),out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0);return `<div class="page-head"><div><h1>گزارش‌های مدیریتی</h1><p>خلاصه داده‌های واحد ${school}</p></div><button class="btn secondary" onclick="window.print()">چاپ گزارش</button></div><div class="grid stats">${stat('👩‍🎓','تعداد دانش‌آموزان',ss.length,'نفر')}${stat('📥','درآمد',money(inc),'تومان')}${stat('📤','هزینه',money(out),'تومان')}${stat('📒','مانده عملیاتی',money(inc-out),'تومان')}</div><section class="panel"><h3 style="font-size:13px">توزیع دانش‌آموزان بر اساس پایه</h3>${grades[school].map(g=>{let n=ss.filter(s=>s.grade===g).length;return `<div style="margin:12px 0"><div style="display:flex;justify-content:space-between;font-size:11px"><span>${g}</span><b>${n.toLocaleString('fa-IR')} نفر</b></div><div class="barline"><i style="width:${ss.length?n/ss.length*100:0}%"></i></div></div>`}).join('')}</section>`}
-function settingsPage(){return `<div class="page-head"><div><h1>پشتیبان‌گیری و تنظیمات</h1><p>مدیریت داده‌های ذخیره‌شده روی این دستگاه</p></div><span class="watermark">سروش</span></div><section class="panel"><h3 style="font-size:13px">پشتیبان‌گیری از اطلاعات</h3><p class="muted">یک فایل JSON از اطلاعات دانش‌آموزان، پرسنل، حسابداری و تنظیمات تهیه کنید.</p><div class="toolbar"><button class="btn" onclick="backup()">⬇ دریافت نسخه پشتیبان</button><label class="btn secondary" for="restoreFile">⬆ بازیابی نسخه پشتیبان</label><input id="restoreFile" type="file" accept=".json" hidden onchange="restore(event)"></div></section><section class="panel"><h3 style="font-size:13px">اطلاعات نرم‌افزار</h3><p class="muted">نام: نرم‌افزار جامع سروش · نسخه ۱.۰ · واحدهای آموزشی: ابتدایی و متوسطه اول</p><button class="btn red small" onclick="clearData()">حذف تمام اطلاعات این مرورگر</button></section><section class="panel"><h3 style="font-size:13px">راهنمای استقرار</h3><p class="muted">این فایل را با نام index.html در مخزن GitHub قرار دهید و GitHub Pages را فعال کنید. اطلاعات نسخه فعلی فقط در مرورگر همین دستگاه نگهداری می‌شود؛ برای استفاده چندکاربره، اتصال امن به پایگاه داده آنلاین ضروری است.</p></section>`}
-function modal(title,body){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=body;document.getElementById('modal').classList.add('show')}function closeModal(){document.getElementById('modal').classList.remove('show')}
-function backup(){let data={students,staff,transactions,tuition,accounts,journals,notices};let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='soroush-backup-'+Date.now()+'.json';a.click();URL.revokeObjectURL(a.href)}
-function restore(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);['students','staff','transactions','tuition','accounts','journals','notices'].forEach(k=>{if(Array.isArray(d[k])){if(k==='students')students=d[k];if(k==='staff')staff=d[k];if(k==='transactions')transactions=d[k];if(k==='tuition')tuition=d[k];if(k==='accounts')accounts=d[k];if(k==='journals')journals=d[k];if(k==='notices')notices=d[k];save(k,d[k])}});alert('بازیابی اطلاعات انجام شد.');render()}catch{alert('فایل پشتیبان معتبر نیست.')}};r.readAsText(f)}
-function clearData(){if(confirm('تمام اطلاعات ذخیره‌شده در این مرورگر حذف شود؟ این عملیات برگشت‌پذیر نیست.')){['students','staff','transactions','tuition','accounts','journals','notices'].forEach(k=>localStorage.removeItem('soroush_'+k));location.reload()}}
-function exportCSV(type){let a=type==='students'?filtered(students):type==='transactions'?filtered(transactions):filtered(tuition);if(!a.length)return alert('اطلاعاتی برای خروجی وجود ندارد.');let keys=Object.keys(a[0]),csv='\uFEFF'+[keys.join(','),...a.map(o=>keys.map(k=>'"'+String(o[k]??'').replace(/"/g,'""')+'"').join(','))].join('\n'),blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}),u=URL.createObjectURL(blob),el=document.createElement('a');el.href=u;el.download='soroush-'+type+'.csv';el.click();URL.revokeObjectURL(u)}
+
+/* ========== شهریه ========== */
+function tuitionContent(){
+ let a=filtered(tuition);
+ let totalDue=a.reduce((s,t)=>s+Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0)),0);
+ let totalPaid=a.reduce((s,t)=>s+(t.paid||0),0);
+ return `<div class="toolbar">
+   <button class="btn" onclick="openTuition()">＋ تعریف شهریه دانش‌آموز</button>
+   <button class="btn secondary small" onclick="exportCSV('tuition')">خروجی CSV</button>
+   <input class="field search" id="tuitionSearch" placeholder="جستجوی نام دانش‌آموز..." oninput="filterTuition()">
+ </div>
+ <div class="kpi-row">
+   <div class="kpi"><small>تعداد پرونده</small><b>${a.length.toLocaleString('fa-IR')}</b></div>
+   <div class="kpi"><small>مجموع پرداختی</small><b class="positive">${money(totalPaid)}</b></div>
+   <div class="kpi"><small>مجموع مانده</small><b class="negative">${money(totalDue)}</b></div>
+ </div>
+ <div id="tuitionTable">${tuitionTable(a)}</div>
+ <p class="muted">مبلغ مانده بر اساس شهریه پس از تخفیف منهای پرداختی‌ها محاسبه می‌شود.</p>`;
+}
+
+function tuitionTable(a){
+ if(!a.length)return '<div class="empty">هنوز پرونده شهریه‌ای تعریف نشده است.</div>';
+ return `<div class="table-wrap"><table><thead><tr><th>دانش‌آموز</th><th>پایه</th><th>شهریه مصوب</th><th>تخفیف</th><th>پرداختی</th><th>مانده</th><th>سررسید</th><th>وضعیت</th><th>عملیات</th></tr></thead><tbody>
+ ${a.map(t=>{const remain=Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0));const status=remain<=0?'paid':(t.paid>0?'partial':'due');const label=remain<=0?'تسویه':(t.paid>0?'پرداخت جزئی':'بدهکار');
+ return `<tr><td><b>${esc(t.name)}</b></td><td>${esc(t.grade)}</td><td>${money(t.total)}</td><td>${money(t.discount)}</td><td class="positive">${money(t.paid)}</td><td><b class="${remain>0?'negative':'positive'}">${money(remain)}</b></td><td>${esc(t.due||'—')}</td><td><span class="badge ${status}">${label}</span></td><td class="actions-cell"><button class="btn secondary small" onclick="payTuition(${t.id})">ثبت پرداخت</button><button class="btn secondary small" onclick="viewInstallments(${t.id})">اقساط</button><button class="btn red small" onclick="delTuition(${t.id})">حذف</button></td></tr>`}).join('')}
+ </tbody></table></div>`;
+}
+function filterTuition(){const q=(document.getElementById('tuitionSearch')?.value||'').toLowerCase();const a=filtered(tuition).filter(t=>t.name.toLowerCase().includes(q));document.getElementById('tuitionTable').innerHTML=tuitionTable(a)}
+
+function openTuition(presetStudentId){
+ let ss=filtered(students);
+ if(!ss.length){toast('ابتدا دانش‌آموز ثبت کنید.','err');return}
+ modal('تعریف شهریه و برنامه پرداخت',`<form id="tuitionForm" class="form-grid">
+   <div class="field wide"><label>انتخاب دانش‌آموز *</label><select name="student" required>${ss.map(s=>`<option value="${s.id}" ${presetStudentId===s.id?'selected':''}>${esc(s.name)} — ${esc(s.grade)}</option>`).join('')}</select></div>
+   <div class="field"><label>شهریه مصوب (تومان)</label><input name="total" type="number" min="0" required></div>
+   <div class="field"><label>تخفیف (تومان)</label><input name="discount" type="number" min="0" value="0"></div>
+   <div class="field"><label>پرداخت اولیه (تومان)</label><input name="paid" type="number" min="0" value="0"></div>
+   <div class="field"><label>سررسید نهایی</label><input name="due" placeholder="۱۴۰۵/۰۹/۳۰"></div>
+   <div class="field wide"><label>توضیحات / تعداد اقساط</label><input name="note" placeholder="مثلاً ۴ قسط ماهانه"></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="saveTuition()">ذخیره شهریه</button></div>`);
+}
+
+function saveTuition(){
+ let f=document.getElementById('tuitionForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));const sid=Number(d.student);const s=students.find(x=>x.id===sid);
+ if(!s){toast('دانش‌آموز یافت نشد','err');return}
+ ['total','discount','paid'].forEach(k=>d[k]=num(d[k]));
+ if(d.discount>d.total){toast('تخفیف نمی‌تواند بیشتر از شهریه باشد','err');return}
+ if(d.paid>d.total-d.discount){toast('پرداخت اولیه بیش از مانده است','err');return}
+ if(tuition.some(t=>t.studentId===sid)){toast('برای این دانش‌آموز قبلاً پرونده شهریه ثبت شده','err');return}
+ const rec={id:uid(),school,studentId:sid,name:s.name,grade:s.grade,total:d.total,discount:d.discount,paid:d.paid,due:d.due,note:d.note,installments:[]};
+ if(d.paid>0){
+  rec.installments.push({id:uid(),amount:d.paid,date:today(),method:'نقدی',desc:'پرداخت اولیه'});
+  transactions.push({id:uid(),school,kind:'درآمد',date:today(),category:'شهریه',amount:d.paid,party:s.name,method:'نقدی',desc:'پرداخت اولیه شهریه'});
+  save('transactions',transactions);
+ }
+ tuition.push(rec);save('tuition',tuition);closeModal();render();toast('پرونده شهریه ذخیره شد');
+}
+
+function delTuition(id){if(!confirm('پرونده شهریه حذف شود؟ (تراکنش‌های پرداخت حذف نمی‌شوند)'))return;tuition=tuition.filter(t=>t.id!==id);save('tuition',tuition);render();toast('پرونده شهریه حذف شد')}
+
+function payTuition(id){
+ const t=tuition.find(x=>x.id===id);if(!t)return;
+ const remain=Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0));
+ if(remain<=0){toast('این پرونده تسویه شده است','err');return}
+ modal('ثبت پرداخت شهریه — '+esc(t.name),`<form id="payTuitionForm" class="form-grid">
+   <div class="field wide"><label>مانده بدهی: <b class="negative">${money(remain)}</b></label></div>
+   <div class="field"><label>مبلغ دریافتی (تومان) *</label><input name="amount" type="number" min="1" max="${remain}" required value="${remain}"></div>
+   <div class="field"><label>روش پرداخت</label><select name="method"><option>نقدی</option><option>کارت‌خوان</option><option>کارت به کارت</option><option>واریز بانکی</option><option>چک</option><option>آنلاین</option></select></div>
+   <div class="field wide"><label>شرح</label><input name="desc" placeholder="مثلاً قسط دوم" value="وصول مانده شهریه"></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn green" onclick="confirmPayTuition(${id})">ثبت پرداخت</button></div>`);
+}
+
+function confirmPayTuition(id){
+ let f=document.getElementById('payTuitionForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));const amount=num(d.amount);
+ const t=tuition.find(x=>x.id===id);const remain=Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0));
+ if(amount<1){toast('مبلغ معتبر وارد کنید','err');return}
+ if(amount>remain){toast('مبلغ بیشتر از مانده بدهی است','err');return}
+ t.paid=(t.paid||0)+amount;
+ t.installments=t.installments||[];t.installments.push({id:uid(),amount,date:today(),method:d.method,desc:d.desc});
+ transactions.push({id:uid(),school,kind:'درآمد',date:today(),category:'شهریه',amount,party:t.name,method:d.method,desc:d.desc||'وصول شهریه'});
+ save('tuition',tuition);save('transactions',transactions);closeModal();render();toast('پرداخت ثبت شد');
+}
+
+function viewInstallments(id){
+ const t=tuition.find(x=>x.id===id);if(!t)return;
+ const list=(t.installments||[]).map(i=>`<div class="installment-row"><span>${esc(i.date)}</span><span>${esc(i.method||'—')}</span><b class="positive">${money(i.amount)}</b></div>`).join('')||'<div class="empty">پرداختی ثبت نشده</div>';
+ modal('اقساط و پرداخت‌های '+esc(t.name),`<div class="kpi-row"><div class="kpi"><small>شهریه</small><b>${money(t.total)}</b></div><div class="kpi"><small>تخفیف</small><b>${money(t.discount)}</b></div><div class="kpi"><small>پرداختی</small><b class="positive">${money(t.paid)}</b></div><div class="kpi"><small>مانده</small><b class="negative">${money(Math.max(0,t.total-t.discount-t.paid))}</b></div></div><div class="section-title">تاریخچه پرداخت‌ها</div>${list}<div class="modal-actions"><button class="btn secondary" onclick="closeModal()">بستن</button><button class="btn green" onclick="closeModal();payTuition(${t.id})">ثبت پرداخت جدید</button></div>`);
+}
+
+/* ========== صندوق و بانک ========== */
+function accountsContent(){
+ let a=accounts.filter(x=>!x.school||x.school===school);
+ return `<div class="toolbar"><button class="btn" onclick="openAccount()">＋ افزودن صندوق یا حساب بانکی</button></div>
+ <div class="grid mini-cards">${a.map(x=>`<div class="mini-card"><small>${esc(x.type)}</small><strong>${esc(x.name)}</strong><div style="margin-top:8px">${money(x.balance)}</div><div style="margin-top:8px"><button class="btn secondary small" onclick="editAccountBalance(${x.id})">تنظیم مانده</button></div></div>`).join('')}</div>
+ <p class="muted" style="margin-top:15px">در این نسخه، مانده حساب‌ها به‌صورت دستی تعریف می‌شود. تطبیق خودکار تراکنش‌ها با حساب بانکی در اتصال نسخه آنلاین اضافه خواهد شد.</p>`;
+}
+function openAccount(){
+ modal('افزودن صندوق / حساب بانکی',`<form id="accountForm" class="form-grid">
+  <div class="field"><label>عنوان حساب</label><input name="name" required></div>
+  <div class="field"><label>نوع حساب</label><select name="type"><option>نقدی</option><option>بانکی</option><option>تنخواه</option></select></div>
+  <div class="field wide"><label>مانده افتتاحیه (تومان)</label><input name="balance" type="number" value="0"></div>
+ </form><div class="modal-actions"><button class="btn" onclick="saveAccount()">ذخیره حساب</button></div>`);
+}
+function saveAccount(){
+ let f=document.getElementById('accountForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));d.balance=num(d.balance);
+ accounts.push({id:uid(),...d,school});save('accounts',accounts);closeModal();render();toast('حساب اضافه شد');
+}
+function editAccountBalance(id){
+ const acc=accounts.find(a=>a.id===id);if(!acc)return;
+ const v=prompt('مانده جدید (تومان):',String(acc.balance||0));if(v===null)return;
+ acc.balance=num(v);save('accounts',accounts);render();toast('مانده به‌روزرسانی شد');
+}
+
+/* ========== اسناد حسابداری ========== */
+function journalContent(){
+ const list=journals.filter(j=>j.school===school);
+ return `<div class="toolbar"><button class="btn" onclick="openJournal()">＋ ثبت سند حسابداری دوطرفه</button></div>
+ ${list.length?`<div class="table-wrap"><table class="ledger-table"><thead><tr><th>شماره سند</th><th>تاریخ</th><th>شرح</th><th>حساب بدهکار</th><th>حساب بستانکار</th><th>مبلغ</th><th>عملیات</th></tr></thead><tbody>
+ ${list.map(j=>`<tr><td>${j.no}</td><td>${esc(j.date)}</td><td>${esc(j.desc)}</td><td class="positive">${esc(j.debit)}</td><td class="negative">${esc(j.credit)}</td><td>${money(j.amount)}</td><td><button class="btn red small" onclick="delJournal(${j.id})">حذف</button></td></tr>`).join('')}
+ </tbody></table></div>`:'<div class="empty">هنوز سند حسابداری ثبت نشده است.</div>'}
+ <p class="muted">ثبت سند دوطرفه، توازن بدهکار و بستانکار را برقرار می‌کند. برای صورت‌های مالی رسمی، تنظیم با استاندارد حسابداری ضروری است.</p>`;
+}
+function openJournal(){
+ modal('ثبت سند حسابداری دوطرفه',`<form id="journalForm" class="form-grid">
+  <div class="field"><label>تاریخ</label><input name="date" required value="${today()}"></div>
+  <div class="field"><label>شماره سند</label><input name="no" value="${journals.length+1}" required></div>
+  <div class="field"><label>حساب بدهکار</label><select name="debit"><option>صندوق</option><option>بانک</option><option>حساب‌های دریافتنی</option><option>هزینه حقوق</option><option>هزینه اجاره</option><option>تجهیزات</option></select></div>
+  <div class="field"><label>حساب بستانکار</label><select name="credit"><option>درآمد شهریه</option><option>بانک</option><option>صندوق</option><option>حساب‌های پرداختنی</option><option>سرمایه</option></select></div>
+  <div class="field"><label>مبلغ (تومان)</label><input name="amount" type="number" min="1" required></div>
+  <div class="field"><label>شرح سند</label><input name="desc" required></div>
+ </form><div class="modal-actions"><button class="btn" onclick="saveJournal()">ثبت سند</button></div>`);
+}
+function saveJournal(){
+ let f=document.getElementById('journalForm');if(!f.reportValidity())return;
+ let d=Object.fromEntries(new FormData(f));d.amount=num(d.amount);
+ if(d.debit===d.credit){toast('حساب بدهکار و بستانکار نمی‌توانند یکسان باشند','err');return}
+ journals.push({id:uid(),school,...d});save('journals',journals);closeModal();render();toast('سند حسابداری ثبت شد');
+}
+function delJournal(id){if(confirm('سند حذف شود؟')){journals=journals.filter(j=>j.id!==id);save('journals',journals);render();toast('سند حذف شد')}}
+
+/* ========== حقوق و دستمزد ========== */
+function payrollPage(){
+ const sf=filtered(staff);
+ const pr=filtered(payrolls);
+ const month=payrollMisc[school]?.month||monthNow();
+ const items=pr.filter(p=>p.month===month);
+ const totalNet=items.reduce((a,p)=>a+p.net,0);
+ const totalPaid=items.filter(p=>p.status==='پرداخت‌شده').reduce((a,p)=>a+p.net,0);
+ const totalUnpaid=items.filter(p=>p.status!=='پرداخت‌شده').reduce((a,p)=>a+p.net,0);
+ return `<div class="page-head"><div><h1>حقوق و دستمزد پرسنل</h1><p>محاسبه، ثبت و پرداخت حقوق ماهانه ${school}</p></div><button class="btn" onclick="openPayroll()">＋ محاسبه حقوق ماه</button></div>
+ <div class="grid stats">
+  ${stat('👩‍🏫','پرسنل فعال',sf.length.toLocaleString('fa-IR'),'پرونده پرسنلی')}
+  ${stat('💵','جمع حقوق ماه',money(totalNet),monthLabel(month))}
+  ${stat('✅','پرداخت‌شده',money(totalPaid),'تسویه‌شده')}
+  ${stat('⏳','باقی‌مانده',money(totalUnpaid),'در انتظار پرداخت')}
+ </div>
+ <section class="panel"><div class="panel-head"><h3>لیست حقوق ${monthLabel(month)}</h3><span class="muted">پایه + مزایا − کسورات</span></div>
+  ${items.length?`<div class="table-wrap"><table><thead><tr><th>پرسنل</th><th>سمت</th><th>حقوق پایه</th><th>مزایا</th><th>کسورات</th><th>خالص</th><th>وضعیت</th><th>عملیات</th></tr></thead><tbody>
+   ${items.map(p=>`<tr><td><b>${esc(p.name)}</b></td><td>${esc(p.role)}</td><td>${money(p.base)}</td><td class="positive">${money(p.bonus)}</td><td class="negative">${money(p.deduction)}</td><td><b>${money(p.net)}</b></td><td><span class="badge ${p.status==='پرداخت‌شده'?'paid':'partial'}">${p.status||'در انتظار'}</span></td><td class="actions-cell"><button class="btn secondary small" onclick="viewPayslip(${p.id})">فیش</button>${p.status!=='پرداخت‌شده'?`<button class="btn green small" onclick="payPayroll(${p.id})">پرداخت</button>`:''}<button class="btn red small" onclick="delPayroll(${p.id})">حذف</button></td></tr>`).join('')}
+  </tbody></table></div>`:'<div class="empty">برای این ماه حقوقی محاسبه نشده است.</div>'}
+ </section>
+ <section class="panel"><div class="panel-head"><h3>تاریخچه حقوق‌ها</h3><button class="btn secondary small" onclick="exportCSV('payrolls')">خروجی CSV</button></div>
+  ${pr.length?`<div class="table-wrap"><table class="ledger-table"><thead><tr><th>ماه</th><th>پرسنل</th><th>خالص</th><th>وضعیت</th><th>تاریخ پرداخت</th></tr></thead><tbody>
+   ${pr.slice().reverse().map(p=>`<tr><td>${monthLabel(p.month)}</td><td>${esc(p.name)}</td><td>${money(p.net)}</td><td><span class="badge ${p.status==='پرداخت‌شده'?'paid':'partial'}">${p.status||'در انتظار'}</span></td><td>${esc(p.paidDate||'—')}</td></tr>`).join('')}
+  </tbody></table></div>`:'<div class="empty">تاریخچه‌ای نیست</div>'}
+ </section>`;
+}
+
+function openPayroll(){
+ const sf=filtered(staff);
+ if(!sf.length){toast('ابتدا پرسنل ثبت کنید','err');return}
+ const month=monthNow();
+ const existing=filtered(payrolls).filter(p=>p.month===month).map(p=>p.staffId);
+ const eligible=sf.filter(s=>!existing.includes(s.id));
+ if(!eligible.length){toast('حقوق همه پرسنل این ماه قبلاً محاسبه شده است','err');return}
+ modal('محاسبه حقوق ماه '+monthLabel(month),`<form id="payrollForm" class="form-grid">
+   <div class="field wide"><label>ماه</label><input name="month" type="number" value="${month}" required></div>
+   <div class="field wide"><label>پرسنل (چند انتخاب)</label><select name="staffIds" multiple required style="min-height:130px">${eligible.map(s=>`<option value="${s.id}">${esc(s.name)} — ${esc(s.role)} — پایه ${money(s.salary)}</option>`).join('')}</select></div>
+   <div class="field"><label>درصد مزایا (%)</label><input name="bonusPct" type="number" min="0" max="100" value="10"></div>
+   <div class="field"><label>درصد کسورات (%)</label><input name="deductionPct" type="number" min="0" max="100" value="7"></div>
+   <div class="field wide"><label>توضیحات</label><input name="note" placeholder="مثلاً اضافه‌کاری، مرخصی..."></div>
+ </form><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">انصراف</button><button class="btn" onclick="savePayroll()">محاسبه و ثبت</button></div>`);
+}
+
+function savePayroll(){
+ let f=document.getElementById('payrollForm');if(!f.reportValidity())return;
+ const fd=new FormData(f);
+ const month=Number(fd.get('month'));
+ const bonusPct=num(fd.get('bonusPct'));
+ const deductionPct=num(fd.get('deductionPct'));
+ const ids=Array.from(f.querySelector('[name=staffIds]').selectedOptions).map(o=>Number(o.value));
+ if(!ids.length){toast('حداقل یک پرسنل انتخاب کنید','err');return}
+ let count=0;
+ ids.forEach(id=>{
+   const s=staff.find(x=>x.id===id);if(!s)return;
+   if(filtered(payrolls).some(p=>p.staffId===id&&p.month===month))return;
+   const base=num(s.salary);
+   const bonus=Math.round(base*bonusPct/100);
+   const deduction=Math.round(base*deductionPct/100);
+   const net=base+bonus-deduction;
+   payrolls.push({id:uid(),school,staffId:id,name:s.name,role:s.role,month,base,bonus,deduction,net,status:'در انتظار',paidDate:''});
+   count++;
+ });
+ save('payrolls',payrolls);closeModal();render();
+ toast(count+' فیش حقوقی محاسبه شد');
+}
+
+function viewPayslip(id){
+ const p=payrolls.find(x=>x.id===id);if(!p)return;
+ modal('فیش حقوقی — '+esc(p.name),`<div class="payslip">
+   <div class="payslip-row"><span>ماه</span><b>${monthLabel(p.month)}</b></div>
+   <div class="payslip-row"><span>سمت</span><b>${esc(p.role)}</b></div>
+   <div class="payslip-row"><span>حقوق پایه</span><b>${money(p.base)}</b></div>
+   <div class="payslip-row"><span>مزایا</span><b class="positive">+ ${money(p.bonus)}</b></div>
+   <div class="payslip-row"><span>کسورات</span><b class="negative">− ${money(p.deduction)}</b></div>
+   <div class="payslip-row"><span>خالص پرداختی</span><b>${money(p.net)}</b></div>
+   <div class="payslip-row"><span>وضعیت</span><b>${esc(p.status||'در انتظار')}</b></div>
+ </div>
+ <div class="modal-actions"><button class="btn secondary" onclick="closeModal()">بستن</button>${p.status!=='پرداخت‌شده'?`<button class="btn green" onclick="closeModal();payPayroll(${p.id})">پرداخت حقوق</button>`:''}</div>`);
+}
+
+function payPayroll(id){
+ const p=payrolls.find(x=>x.id===id);if(!p||p.status==='پرداخت‌شده')return;
+ if(!confirm('پرداخت حقوق '+p.name+' به مبلغ '+money(p.net)+' ثبت شود؟'))return;
+ p.status='پرداخت‌شده';p.paidDate=today();
+ transactions.push({id:uid(),school,kind:'هزینه',date:today(),category:'حقوق و دستمزد',amount:p.net,party:p.name,method:'واریز بانکی',desc:'پرداخت حقوق '+monthLabel(p.month)});
+ save('payrolls',payrolls);save('transactions',transactions);render();toast('حقوق پرداخت شد');
+}
+
+function delPayroll(id){if(!confirm('فیش حقوقی حذف شود؟'))return;payrolls=payrolls.filter(p=>p.id!==id);save('payrolls',payrolls);render();toast('فیش حذف شد')}
+
+/* ========== گزارش‌ها ========== */
+function reportsPage(){
+ const ss=filtered(students);
+ const tx=filtered(transactions);
+ const inc=tx.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+t.amount,0);
+ const out=tx.filter(t=>t.kind==='هزینه').reduce((a,t)=>a+t.amount,0);
+ const pr=filtered(payrolls);
+ const paidPayroll=pr.filter(p=>p.status==='پرداخت‌شده').reduce((a,p)=>a+p.net,0);
+ const unpaidPayroll=pr.filter(p=>p.status!=='پرداخت‌شده').reduce((a,p)=>a+p.net,0);
+ const dueTuition=filtered(tuition).reduce((a,t)=>a+Math.max(0,(t.total||0)-(t.discount||0)-(t.paid||0)),0);
+ const debtors=filtered(tuition).filter(t=>(t.total-(t.discount||0)-(t.paid||0))>0).sort((a,b)=>((b.total-b.discount-b.paid)-(a.total-a.discount-a.paid)));
+ return `<div class="page-head"><div><h1>گزارش‌های مدیریتی</h1><p>خلاصه داده‌های واحد ${school}</p></div><button class="btn secondary" onclick="window.print()">چاپ گزارش</button></div>
+ <div class="grid stats">
+  ${stat('👩‍🎓','دانش‌آموزان',ss.length.toLocaleString('fa-IR'),'نفر')}
+  ${stat('📥','درآمد',money(inc),'تومان')}
+  ${stat('📤','هزینه',money(out),'تومان')}
+  ${stat('📒','مانده عملیاتی',money(inc-out),'تومان')}
+ </div>
+ <section class="panel"><h3 class="section-title" style="margin-top:0">توزیع دانش‌آموزان بر اساس پایه</h3>
+  ${grades[school].map(g=>{const n=ss.filter(s=>s.grade===g).length;return `<div style="margin:12px 0"><div style="display:flex;justify-content:space-between;font-size:11px"><span>${g}</span><b>${n.toLocaleString('fa-IR')} نفر</b></div><div class="barline"><i style="width:${ss.length?n/ss.length*100:0}%"></i></div></div>`}).join('')}
+ </section>
+ <section class="panel"><h3 class="section-title" style="margin-top:0">وضعیت حقوق و شهریه</h3>
+  <div class="grid mini-cards">
+   <div class="mini-card"><small>حقوق پرداخت‌شده</small><strong class="positive">${money(paidPayroll)}</strong></div>
+   <div class="mini-card"><small>حقوق معوق</small><strong class="negative">${money(unpaidPayroll)}</strong></div>
+   <div class="mini-card"><small>مطالبات شهریه</small><strong class="negative">${money(dueTuition)}</strong></div>
+  </div>
+  <h3 class="section-title">بدهکاران شهریه</h3>
+  ${debtors.length?`<div class="table-wrap"><table class="ledger-table"><thead><tr><th>دانش‌آموز</th><th>پایه</th><th>مانده بدهی</th></tr></thead><tbody>
+   ${debtors.map(t=>`<tr><td>${esc(t.name)}</td><td>${esc(t.grade)}</td><td class="negative"><b>${money(t.total-t.discount-t.paid)}</b></td></tr>`).join('')}
+  </tbody></table></div>`:'<div class="empty">بدهکاری ثبت نشده است</div>'}
+ </section>`;
+}
+
+/* ========== اطلاعیه‌ها ========== */
+function noticesPage(){
+ const a=filtered(notices);
+ return `<div class="page-head"><div><h1>اطلاعیه‌های مدرسه</h1><p>ثبت و آرشیو پیام‌های داخلی</p></div><button class="btn" onclick="openNotice()">＋ اطلاعیه جدید</button></div>
+ <section class="panel">${a.length?a.slice().reverse().map(n=>`<div style="padding:13px;border-bottom:1px solid var(--line)"><div style="display:flex;justify-content:space-between;align-items:center"><b>${esc(n.title)}</b><button class="btn red small" onclick="delNotice(${n.id})">حذف</button></div><p class="muted" style="margin:8px 0">${esc(n.body)}</p><small class="muted">${esc(n.date)}</small></div>`).join(''):'<div class="empty">اطلاعیه‌ای ثبت نشده است.</div>'}</section>`;
+}
+function openNotice(){
+ modal('ثبت اطلاعیه',`<form id="noticeForm" class="form-grid">
+  <div class="field wide"><label>عنوان</label><input name="title" required></div>
+  <div class="field wide"><label>متن اطلاعیه</label><textarea name="body" rows="4" required></textarea></div>
+ </form><div class="modal-actions"><button class="btn" onclick="saveNotice()">انتشار اطلاعیه</button></div>`);
+}
+function saveNotice(){
+ let f=document.getElementById('noticeForm');if(!f.reportValidity())return;
+ notices.push({id:uid(),school,date:today(),...Object.fromEntries(new FormData(f))});
+ save('notices',notices);closeModal();render();toast('اطلاعیه منتشر شد');
+}
+function delNotice(id){if(confirm('اطلاعیه حذف شود؟')){notices=notices.filter(n=>n.id!==id);save('notices',notices);render();toast('اطلاعیه حذف شد')}}
+
+/* ========== تنظیمات ========== */
+function settingsPage(){
+ return `<div class="page-head"><div><h1>پشتیبان‌گیری و تنظیمات</h1><p>مدیریت داده‌های ذخیره‌شده روی این دستگاه</p></div><span class="watermark">سروش</span></div>
+ <section class="panel"><h3 style="font-size:13px">پشتیبان‌گیری از اطلاعات</h3>
+  <p class="muted">یک فایل JSON از اطلاعات دانش‌آموزان، پرسنل، حسابداری، حقوق و تنظیمات تهیه کنید.</p>
+  <div class="toolbar">
+   <button class="btn" onclick="backup()">⬇ دریافت نسخه پشتیبان</button>
+   <label class="btn secondary" for="restoreFile">⬆ بازیابی نسخه پشتیبان</label>
+   <input id="restoreFile" type="file" accept=".json" hidden onchange="restore(event)">
+  </div>
+ </section>
+ <section class="panel"><h3 style="font-size:13px">اطلاعات نرم‌افزار</h3>
+  <p class="muted">نام: نرم‌افزار جامع سروش · نسخه ۱.۱ · واحدهای آموزشی: ابتدایی و متوسطه اول</p>
+  <button class="btn red small" onclick="clearData()">حذف تمام اطلاعات این مرورگر</button>
+ </section>
+ <section class="panel"><h3 style="font-size:13px">راهنمای استقرار</h3>
+  <p class="muted">این فایل را با نام index.html در مخزن GitHub قرار دهید و GitHub Pages را فعال کنید. اطلاعات نسخه فعلی فقط در مرورگر همین دستگاه نگهداری می‌شود؛ برای استفاده چندکاربره، اتصال امن به پایگاه داده آنلاین ضروری است.</p>
+ </section>`;
+}
+
+/* ========== مودال، بکاپ، CSV ========== */
+function modal(title,body){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=body;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+
+function backup(){
+ const data={students,staff,transactions,tuition,accounts,journals,notices,payrolls,payrollMisc};
+ const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='soroush-backup-'+Date.now()+'.json';a.click();URL.revokeObjectURL(a.href);
+ toast('نسخه پشتیبان دریافت شد');
+}
+
+function restore(e){
+ const f=e.target.files[0];if(!f)return;
+ const r=new FileReader();
+ r.onload=()=>{try{
+   const d=JSON.parse(r.result);
+   const map={students,staff,transactions,tuition,accounts,journals,notices,payrolls,payrollMisc};
+   for(const k in map){if(Array.isArray(d[k])){if(k==='students')students=d[k];if(k==='staff')staff=d[k];if(k==='transactions')transactions=d[k];if(k==='tuition')tuition=d[k];if(k==='accounts')accounts=d[k];if(k==='journals')journals=d[k];if(k==='notices')notices=d[k];if(k==='payrolls')payrolls=d[k];save(k,d[k])}}
+   if(typeof d.payrollMisc==='object'&&d.payrollMisc)payrollMisc=d.payrollMisc;
+   toast('بازیابی اطلاعات انجام شد');render();
+ }catch{toast('فایل پشتیبان معتبر نیست','err')}};
+ r.readAsText(f);
+ e.target.value='';
+}
+
+function clearData(){
+ if(confirm('تمام اطلاعات ذخیره‌شده در این مرورگر حذف شود؟ این عملیات برگشت‌پذیر نیست.')){
+   ['students','staff','transactions','tuition','accounts','journals','notices','payrolls','payrollMisc'].forEach(k=>localStorage.removeItem('soroush_'+k));
+   location.reload();
+ }
+}
+
+function exportCSV(type){
+ let a,keys;
+ if(type==='students'){a=filtered(students);keys=['name','national','grade','cl','phone','parent','note']}
+ else if(type==='transactions'){a=filtered(transactions);keys=['date','kind','category','party','method','amount','desc']}
+ else if(type==='tuition'){a=filtered(tuition);keys=['name','grade','total','discount','paid','due','note']}
+ else if(type==='payrolls'){a=filtered(payrolls);keys=['month','name','role','base','bonus','deduction','net','status','paidDate']}
+ else return;
+ if(!a.length){toast('اطلاعاتی برای خروجی وجود ندارد','err');return}
+ const header=keys.join(',');
+ const rows=a.map(o=>keys.map(k=>'"'+String(o[k]??'').replace(/"/g,'""')+'"').join(','));
+ const csv='\uFEFF'+[header,...rows].join('\n');
+ const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+ const u=URL.createObjectURL(blob);const el=document.createElement('a');el.href=u;el.download='soroush-'+type+'.csv';el.click();URL.revokeObjectURL(u);
+ toast('خروجی CSV آماده شد');
+}
+
+/* ========== شروع ========== */
 render();
 </script>
 </body>
